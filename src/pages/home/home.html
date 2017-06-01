@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
     <button ion-button icon-only menuToggle>
-      <ion-icon name='menu'></ion-icon>
+      <ion-icon name='menu' class='menu_toogle'></ion-icon>
     </button>
   </ion-navbar>
 </ion-header>
@@ -13,7 +13,14 @@
     </ion-card-header>  
     <ion-card-content>
       <ion-list>
-        
+        <button ion-item>
+          <ion-avatar item-left>
+            <img src="../../assets/img/card-logo-amex.svg">
+          </ion-avatar>
+          <div class='cardcredit'>Caixa</div>            
+          <div class='cardcredit_detail'>Conta corrente</div>
+          <div class='conta'>R$ 3051,00</div>
+        </button>        
       </ion-list>
     </ion-card-content>
   </ion-card>
@@ -26,17 +33,17 @@
       <ion-list>
         <button ion-item>
           <ion-avatar item-left>
-            <img src="../../assets/img/visa.jpg">
+            <img src="../../assets/img/card-logo-visa.svg">
           </ion-avatar>
           <div class='cardcredit'>Santander Plantinum</div>            
           <div class='cardcredit_detail'>Fatura<span class='cardcredit_number_fatura'>R$ -600,00</span></div>
           <div class='cardcredit_detail'>Limite<span class='cardcredit_number_limite'>R$ 600,00</span></div>
         </button>
-        </ion-list>
-        <ion-list>
+      </ion-list>
+      <ion-list>
         <button ion-item>
           <ion-avatar item-left>
-            <img src="../../assets/img/mastercard.jpg">
+            <img src="../../assets/img/card-logo-mastercard.svg">
           </ion-avatar>         
           <div class='cardcredit'>Santander Plantinum</div>            
           <div class='cardcredit_detail'>Fatura<span class='cardcredit_number_fatura'>R$ -600,00</span></div>
@@ -51,9 +58,25 @@
       <span class='cardheader'>Alertas da semana</span>    
     </ion-card-header>  
     <ion-card-content>
-      <ion-list>
-
-      </ion-list>
+      <div class='alerta_semana'>
+        <div class='style_alerta_semana'>
+          <div class='style_alerta_semana_flex'><div style='color:#4CAF50' class='style_alerta_semana_numero'>0</div></div>
+          <div class='style_alerta_semana_flex'>contas a receber</div>
+        </div>
+        <div class='style_alerta_semana'>
+          <div class='style_alerta_semana_flex'><div class='style_alerta_semana_numero'>2</div></div>
+          <div class='style_alerta_semana_flex'><div class='alerta_semana_detalhe'>contas a pagar</div></div>
+        </div>
+        <div>
+          <div class='style_alerta_semana_flex'><div class='style_alerta_semana_numero'>3</div></div>
+          <div class='style_alerta_semana_flex'><div class='alerta_semana_detalhe'>contas atrasadas</div></div>
+        </div>
+      </div>
+      <div class='style_alerta_semana_flex'>
+        <div class='btn_resolver'>
+          <button ion-button round small color="light">resolver</button>
+        </div>
+      </div>
     </ion-card-content>
   </ion-card>
   <ion-fab right bottom>
