@@ -65,6 +65,55 @@ page-home {
         width: 130px;
     }
 
+    .saldo{
+        color: #2196F3;
+        justify-content: center;
+        display: flex;
+    }
+
+    .saldo_cifrao{
+        font-size: 20px;
+        padding-top: 5px;
+    }
+
+    .saldo_valor{
+        font-size: 35px;
+        margin-left: 10px;
+    }
+
+    .saldo_geral_text{
+        font-size: 12px;
+        color: #757575;
+        justify-content: center;
+        display: flex;
+    }
+
+    .periodo{
+        font-size: 12px;
+        color: #212121;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .resumo{
+        display: flex;
+        justify-content: space-between;
+        align-content: flex-start;
+        margin-top: 5px;
+    }
+
+    .receita{
+        color: #4CAF50
+    }
+
+    .despesa{
+        color: #F44336
+    }
+
+    .resultado{
+        font-size: 12px;
+    }
+
     .conta{
         font-size: 15px;
         color: #2196F3;

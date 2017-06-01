@@ -29823,6 +29823,69 @@ page-home .cardcredit {
   width: 130px;
 }
 
+page-home .saldo {
+  color: #2196F3;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+page-home .saldo_cifrao {
+  font-size: 20px;
+  padding-top: 5px;
+}
+
+page-home .saldo_valor {
+  font-size: 35px;
+  margin-left: 10px;
+}
+
+page-home .saldo_geral_text {
+  font-size: 12px;
+  color: #757575;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+page-home .periodo {
+  font-size: 12px;
+  color: #212121;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+page-home .resumo {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  margin-top: 5px;
+}
+
+page-home .receita {
+  color: #4CAF50;
+}
+
+page-home .despesa {
+  color: #F44336;
+}
+
+page-home .resultado {
+  font-size: 12px;
+}
+
 page-home .conta {
   font-size: 15px;
   color: #2196F3;
