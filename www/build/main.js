@@ -54887,7 +54887,7 @@ function SlideEdgeGesture_tsickle_Closure_declarations() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_app_app_root__ = __webpack_require__(51);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__components_app_app_root__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_app_menu_controller__ = __webpack_require__(23);
-/* unused harmony reexport MenuController */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_1__components_app_menu_controller__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_action_sheet_action_sheet__ = __webpack_require__(48);
 /* unused harmony reexport ActionSheet */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_action_sheet_action_sheet_controller__ = __webpack_require__(104);
@@ -55110,7 +55110,7 @@ function SlideEdgeGesture_tsickle_Closure_declarations() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_110__platform_dom_controller__ = __webpack_require__(8);
 /* unused harmony reexport DomController */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_111__platform_platform__ = __webpack_require__(3);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_111__platform_platform__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_111__platform_platform__["a"]; });
 /* unused harmony reexport setupPlatform */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_112__tap_click_haptic__ = __webpack_require__(35);
 /* unused harmony reexport Haptic */
@@ -55736,19 +55736,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var HomePage = (function () {
-    function HomePage(navCtrl) {
+    function HomePage(navCtrl, menu) {
         this.navCtrl = navCtrl;
+        menu.enable(true);
     }
     return HomePage;
 }());
 HomePage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"C:\Users\c111807\Downloads\controlle\src\pages\home\home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Ionic Blank\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-fab right bottom>\n    <button ion-fab color="danger"><ion-icon name="logo-usd"></ion-icon></button>\n    <ion-fab-list side="top">\n      <button ion-fab color="danger"><ion-icon name="md-thumbs-down"></ion-icon></button>\n      <button ion-fab color="secondary"><ion-icon name="md-thumbs-up"></ion-icon></button>\n      <button ion-fab color="gray"><ion-icon name="md-redo"></ion-icon></button>\n    </ion-fab-list>\n  </ion-fab>\n</ion-content>\n'/*ion-inline-end:"C:\Users\c111807\Downloads\controlle\src\pages\home\home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"/home/rafael/github/controlle/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button icon-only menuToggle>\n      <ion-icon name=\'menu\'></ion-icon>\n    </button>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding class=\'content\'>\n  <ion-card>\n    <ion-card-header>\n      <span class=\'cardheader\'>Contas</span>\n    </ion-card-header>  \n    <ion-card-content>\n      <ion-list>\n        \n      </ion-list>\n    </ion-card-content>\n  </ion-card>\n\n  <ion-card>\n    <ion-card-header>\n      <span class=\'cardheader\'>Cartões de créditos</span>\n    </ion-card-header>  \n    <ion-card-content>\n      <ion-list>\n        <button ion-item>\n          <ion-avatar item-left>\n            <img src="../../assets/img/visa.jpg">\n          </ion-avatar>\n          <div class=\'cardcredit\'>Santander Plantinum</div>            \n          <div class=\'cardcredit_detail\'>Fatura<span class=\'cardcredit_number_fatura\'>R$ -600,00</span></div>\n          <div class=\'cardcredit_detail\'>Limite<span class=\'cardcredit_number_limite\'>R$ 600,00</span></div>\n        </button>\n        </ion-list>\n        <ion-list>\n        <button ion-item>\n          <ion-avatar item-left>\n            <img src="../../assets/img/mastercard.jpg">\n          </ion-avatar>         \n          <div class=\'cardcredit\'>Santander Plantinum</div>            \n          <div class=\'cardcredit_detail\'>Fatura<span class=\'cardcredit_number_fatura\'>R$ -600,00</span></div>\n          <div class=\'cardcredit_detail\'>Limite<span class=\'cardcredit_number_limite\'>R$ 600,00</span></div>\n        </button>\n      </ion-list>\n    </ion-card-content>\n  </ion-card>\n\n  <ion-card>\n    <ion-card-header>\n      <span class=\'cardheader\'>Alertas da semana</span>    \n    </ion-card-header>  \n    <ion-card-content>\n      <ion-list>\n\n      </ion-list>\n    </ion-card-content>\n  </ion-card>\n  <ion-fab right bottom>\n    <button ion-fab color="danger"><ion-icon name="logo-usd"></ion-icon></button>\n    <ion-fab-list side="top">\n      <button ion-fab color="danger"><ion-icon name="md-thumbs-down"></ion-icon></button>\n      <button ion-fab color="secondary"><ion-icon name="md-thumbs-up"></ion-icon></button>\n      <button ion-fab color="gray"><ion-icon name="md-redo"></ion-icon></button>\n    </ion-fab-list>\n  </ion-fab>\n</ion-content>\n'/*ion-inline-end:"/home/rafael/github/controlle/src/pages/home/home.html"*/
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* MenuController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* MenuController */]) === "function" && _b || Object])
 ], HomePage);
 
-var _a;
+var _a, _b;
 //# sourceMappingURL=home.js.map
 
 /***/ }),
@@ -74418,7 +74419,7 @@ AppModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["a" /* NgModule */])({
         declarations: [
             __WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* MyApp */],
-            __WEBPACK_IMPORTED_MODULE_8__pages_home_home__["a" /* HomePage */]
+            __WEBPACK_IMPORTED_MODULE_8__pages_home_home__["a" /* HomePage */],
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -74427,7 +74428,7 @@ AppModule = __decorate([
         bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicApp */]],
         entryComponents: [
             __WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* MyApp */],
-            __WEBPACK_IMPORTED_MODULE_8__pages_home_home__["a" /* HomePage */]
+            __WEBPACK_IMPORTED_MODULE_8__pages_home_home__["a" /* HomePage */],
         ],
         providers: [
             __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__["a" /* StatusBar */],
@@ -74663,9 +74664,9 @@ var MyApp = (function () {
     return MyApp;
 }());
 MyApp = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({template:/*ion-inline-start:"C:\Users\c111807\Downloads\controlle\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"C:\Users\c111807\Downloads\controlle\src\app\app.html"*/
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({template:/*ion-inline-start:"/home/rafael/github/controlle/src/app/app.html"*/'<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n  <ion-content>\n    <ion-list>\n      <button ion-item (click)="openPage(homePage)">\n        Home\n      </button>\n      <button ion-item (click)="openPage(friendsPage)">\n        Friends\n      </button>\n      <button ion-item (click)="openPage(eventsPage)">\n        Events\n      </button>\n      <button ion-item (click)="closeMenu()">\n        Close Menu\n      </button>\n    </ion-list>\n  </ion-content>\n</ion-menu>\n\n<ion-nav id="nav" #content [root]="rootPage"></ion-nav>'/*ion-inline-end:"/home/rafael/github/controlle/src/app/app.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
 ], MyApp);
 
 //# sourceMappingURL=app.component.js.map

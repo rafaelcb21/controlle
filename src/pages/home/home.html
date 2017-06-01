@@ -1,12 +1,61 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+    <button ion-button icon-only menuToggle>
+      <ion-icon name='menu'></ion-icon>
+    </button>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding class='content'>
+  <ion-card>
+    <ion-card-header>
+      <span class='cardheader'>Contas</span>
+    </ion-card-header>  
+    <ion-card-content>
+      <ion-list>
+        
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <span class='cardheader'>Cartões de créditos</span>
+    </ion-card-header>  
+    <ion-card-content>
+      <ion-list>
+        <button ion-item>
+          <ion-avatar item-left>
+            <img src="../../assets/img/visa.jpg">
+          </ion-avatar>
+          <div class='cardcredit'>Santander Plantinum</div>            
+          <div class='cardcredit_detail'>Fatura<span class='cardcredit_number_fatura'>R$ -600,00</span></div>
+          <div class='cardcredit_detail'>Limite<span class='cardcredit_number_limite'>R$ 600,00</span></div>
+        </button>
+        </ion-list>
+        <ion-list>
+        <button ion-item>
+          <ion-avatar item-left>
+            <img src="../../assets/img/mastercard.jpg">
+          </ion-avatar>         
+          <div class='cardcredit'>Santander Plantinum</div>            
+          <div class='cardcredit_detail'>Fatura<span class='cardcredit_number_fatura'>R$ -600,00</span></div>
+          <div class='cardcredit_detail'>Limite<span class='cardcredit_number_limite'>R$ 600,00</span></div>
+        </button>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <span class='cardheader'>Alertas da semana</span>    
+    </ion-card-header>  
+    <ion-card-content>
+      <ion-list>
+
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
   <ion-fab right bottom>
     <button ion-fab color="danger"><ion-icon name="logo-usd"></ion-icon></button>
     <ion-fab-list side="top">
