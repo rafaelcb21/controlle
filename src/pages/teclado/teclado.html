@@ -4,39 +4,51 @@
   </ion-navbar>
 </ion-header>
 <ion-content class="grid-basic-page">
-    <div class='teclado estrutura_input'><div class='cifrao'>R$</div><div class='cor'>{{ valor }}</div></div>
+    <div class='teclado estrutura_input'>
+        <div class='cifrao'>R$</div>
+        <span class='cor' *ngFor='let num of list_numbers'>{{ num }}</span>
+    </div>
     <ion-grid class='keyboard'>
         <ion-row>
             <ion-col col-4>
-                <div><button ion-button round clear color="danger" class='size_teclado' (click)="screen('1')">1</button></div>
+                <div><button ion-button round clear color="danger" class='size_teclado'
+                (click)="screen('1')">1</button></div>
             </ion-col>
             <ion-col col-4>
-                <div><button ion-button round clear color="danger" class='size_teclado'>2</button></div>
+                <div><button ion-button round clear color="danger" class='size_teclado'
+                (click)="screen('2')">2</button></div>
             </ion-col>
             <ion-col col-4>
-                <div><button ion-button round clear color="danger" class='size_teclado'>3</button></div>
-            </ion-col>
-        </ion-row>
-        <ion-row>
-            <ion-col col-4>
-                <div><button ion-button round clear color="danger" class='size_teclado'>4</button></div>
-            </ion-col>
-            <ion-col col-4>
-                <div><button ion-button round clear color="danger" class='size_teclado'>5</button></div>
-            </ion-col>
-            <ion-col col-4>
-                <div><button ion-button round clear color="danger" class='size_teclado'>6</button></div>
+                <div><button ion-button round clear color="danger" class='size_teclado'
+                (click)="screen('3')">3</button></div>
             </ion-col>
         </ion-row>
         <ion-row>
             <ion-col col-4>
-                <div><button ion-button round clear color="danger" class='size_teclado'>7</button></div>
+                <div><button ion-button round clear color="danger" class='size_teclado'
+                (click)="screen('4')">4</button></div>
             </ion-col>
             <ion-col col-4>
-                <div><button ion-button round clear color="danger" class='size_teclado'>8</button></div>
+                <div><button ion-button round clear color="danger" class='size_teclado'
+                (click)="screen('5')">5</button></div>
             </ion-col>
             <ion-col col-4>
-                <div><button ion-button round clear color="danger" class='size_teclado'>9</button></div>
+                <div><button ion-button round clear color="danger" class='size_teclado'
+                (click)="screen('6')">6</button></div>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col-4>
+                <div><button ion-button round clear color="danger" class='size_teclado'
+                (click)="screen('7')">7</button></div>
+            </ion-col>
+            <ion-col col-4>
+                <div><button ion-button round clear color="danger" class='size_teclado'
+                (click)="screen('8')">8</button></div>
+            </ion-col>
+            <ion-col col-4>
+                <div><button ion-button round clear color="danger" class='size_teclado'
+                (click)="screen('9')">9</button></div>
             </ion-col>
         </ion-row>
         <ion-row>
@@ -44,11 +56,12 @@
                 <div><button ion-button round clear color="light" class='size_teclado'></button></div>
             </ion-col>
             <ion-col col-4>
-                <div><button ion-button round clear color="danger" class='size_teclado'>0</button></div>
+                <div><button ion-button round clear color="danger" class='size_teclado'
+                (click)="screen('0')">0</button></div>
             </ion-col>
             <ion-col col-4>
                 <div>
-                    <button ion-button color="danger" clear icon-only style="width: 70px;">
+                    <button ion-button color="danger" clear icon-only style="width: 70px;" (click)='pop()'>
                         <ion-icon ios="ios-backspace" md="md-backspace" is-active="false"></ion-icon>
                     </button>
                 </div>
