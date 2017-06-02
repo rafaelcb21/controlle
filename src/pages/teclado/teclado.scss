@@ -32,6 +32,7 @@ page-teclado {
         align-content: center;
         align-items: center;
         padding: 40px;
+        height: 54px;
     }
 
     .cor {
@@ -44,6 +45,22 @@ page-teclado {
         font-size: 20px;
         padding-right: 10px;
     }
+
+    .grid-basic-page {
+        ion-col div {
+            /*background-color: #f0f5ff;
+            border: 1px solid #e6e9ee;
+            border-radius: 2px;*/
+            padding: 5px;
+            text-align: center;
+        }
+    }
+
+    .button-inner {
+        font-size: 40px;
+    }
+
+
 
 
 }

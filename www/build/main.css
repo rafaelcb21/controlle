@@ -29955,6 +29955,7 @@ page-teclado .estrutura_input {
   -ms-flex-align: center;
   align-items: center;
   padding: 40px;
+  height: 54px;
 }
 
 page-teclado .cor {
@@ -29966,4 +29967,16 @@ page-teclado .cifrao {
   color: #F44336;
   font-size: 20px;
   padding-right: 10px;
+}
+
+page-teclado .grid-basic-page ion-col div {
+  /*background-color: #f0f5ff;
+            border: 1px solid #e6e9ee;
+            border-radius: 2px;*/
+  padding: 5px;
+  text-align: center;
+}
+
+page-teclado .button-inner {
+  font-size: 40px;
 }
