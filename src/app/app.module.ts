@@ -7,11 +7,13 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/toPromise';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { TecladoPage } from '../pages/teclado/teclado';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
+    TecladoPage,
   ],
   imports: [
     BrowserModule,
@@ -21,6 +23,7 @@ import { HomePage } from '../pages/home/home';
   entryComponents: [
     MyApp,
     HomePage,
+    TecladoPage,
   ],
   providers: [
     StatusBar,

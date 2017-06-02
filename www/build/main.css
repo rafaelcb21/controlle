@@ -29907,3 +29907,63 @@ page-home .cardcredit_detail {
   font-size: 10px;
   color: #757575;
 }
+
+page-teclado .toolbar-background {
+  border-color: #F44336;
+  background: #F44336;
+}
+
+page-teclado .bar-button-default-md, page-teclado .bar-button-clear-md-default, page-teclado .bar-button-md-default {
+  color: #fff;
+}
+
+page-teclado .bar-button-default-ios, page-teclado .bar-button-default.bar-button-ios-default, page-teclado .bar-button-clear-ios-default {
+  color: #fff;
+}
+
+page-teclado .bar-button-default-wp, page-teclado .bar-button-clear-wp-default, page-teclado .bar-button-wp-default {
+  color: #fff;
+}
+
+page-teclado .teclado {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+page-teclado .estrutura {
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+page-teclado .estrutura_input {
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 40px;
+}
+
+page-teclado .cor {
+  color: #F44336;
+  font-size: 45px;
+}
+
+page-teclado .cifrao {
+  color: #F44336;
+  font-size: 20px;
+  padding-right: 10px;
+}

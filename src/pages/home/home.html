@@ -15,7 +15,7 @@
     <ion-card-content>      
       <ion-list>
         <ion-item>
-          <div class='periodo'>20/05 - 19/05</div>           
+          <div class='periodo'>20/05 - 19/06</div>           
           <div class='resumo'><div class='cardcredit_detail'>Receita:</div><div class='resultado receita'>R$ 3.051,00</div></div>
           <div class='resumo'><div class='cardcredit_detail'>Despesa:</div><div class='resultado despesa'>R$ -2.587,00</div></div>
           <div class='resumo'><div class='cardcredit_detail'>Resultado:</div><div class='resultado receita'>R$ 464,00</div></div>
@@ -96,12 +96,12 @@
       </div>
     </ion-card-content>
   </ion-card>
-  <ion-fab right bottom>
-    <button ion-fab color="danger"><ion-icon name="logo-usd"></ion-icon></button>
+  <ion-fab right bottom #fab>
+    <button ion-fab color="danger"><ion-icon ios="logo-usd" md="logo-usd"></ion-icon></button>
     <ion-fab-list side="top">
-      <button ion-fab color="danger"><ion-icon name="md-thumbs-down"></ion-icon></button>
-      <button ion-fab color="secondary"><ion-icon name="md-thumbs-up"></ion-icon></button>
-      <button ion-fab color="gray"><ion-icon name="md-redo"></ion-icon></button>
+      <button ion-fab color="danger" (click)="teclado('despesa', fab)" ><ion-icon ios="ios-thumbs-down" md="md-thumbs-down"></ion-icon></button>
+      <button ion-fab color="secondary"><ion-icon ios="ios-thumbs-up" md="md-thumbs-up"></ion-icon></button>
+      <button ion-fab color="gray"><ion-icon ios="ios-redo" md="md-redo"></ion-icon></button>
     </ion-fab-list>
   </ion-fab>
 </ion-content>

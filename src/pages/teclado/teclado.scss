@@ -1,0 +1,49 @@
+page-teclado {
+    .toolbar-background {
+        border-color: #F44336;
+        background: #F44336;
+    }
+
+    .bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default {
+        color: #fff;
+    }
+
+    .bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default {
+        color: #fff;
+    }
+
+    .bar-button-default-wp, .bar-button-clear-wp-default, .bar-button-wp-default {
+        color: #fff;
+    }
+
+    .teclado {
+        display: flex;
+    }
+
+    .estrutura {
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        padding-bottom: 25px;
+    }
+
+    .estrutura_input{
+        justify-content: flex-end;
+        align-content: center;
+        align-items: center;
+        padding: 40px;
+    }
+
+    .cor {
+        color: #F44336;
+        font-size: 45px;
+    }
+
+    .cifrao {
+        color: #F44336;
+        font-size: 20px;
+        padding-right: 10px;
+    }
+
+
+}
