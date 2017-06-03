@@ -17,7 +17,7 @@ export class NumberBrasil implements PipeTransform {
         }
         if(value.length >= 3){
             let numeroString = parseFloat(value.slice(0,-2) +'.'+ value.slice(-2));            
-            return numeroString.toLocaleString('pt-BR');
+            return numeroString.toLocaleString('pt-BR', { minimumFractionDigits: 2 });
         }           
     }
 }

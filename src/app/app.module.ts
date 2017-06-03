@@ -9,6 +9,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { TecladoPage } from '../pages/teclado/teclado';
 import { NumberBrasil } from '../pages/teclado/teclado.pipe';
+import { LancamentoPage } from '../pages/lancamento/lancamento';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { NumberBrasil } from '../pages/teclado/teclado.pipe';
     HomePage,
     TecladoPage,
     NumberBrasil,
+    LancamentoPage,
   ],
   imports: [
     BrowserModule,
@@ -26,6 +28,7 @@ import { NumberBrasil } from '../pages/teclado/teclado.pipe';
     MyApp,
     HomePage,
     TecladoPage,
+    LancamentoPage,
   ],
   providers: [
     StatusBar,

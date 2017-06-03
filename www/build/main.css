@@ -29908,6 +29908,84 @@ page-home .cardcredit_detail {
   color: #757575;
 }
 
+page-lancamento ion-navbar.red div.toolbar-background {
+  border-color: #F44336;
+  background: #F44336;
+}
+
+page-lancamento ion-navbar.green div.toolbar-background {
+  border-color: #4CAF50;
+  background: #4CAF50;
+}
+
+page-lancamento ion-navbar.gray div.toolbar-background {
+  border-color: #9E9E9E;
+  background: #9E9E9E;
+}
+
+page-lancamento .bar-button-default-md, page-lancamento .bar-button-clear-md-default, page-lancamento .bar-button-md-default {
+  color: #fff;
+}
+
+page-lancamento .bar-button-default-ios, page-lancamento .bar-button-default.bar-button-ios-default, page-lancamento .bar-button-clear-ios-default {
+  color: #fff;
+}
+
+page-lancamento .bar-button-default-wp, page-lancamento .bar-button-clear-wp-default, page-lancamento .bar-button-wp-default {
+  color: #fff;
+}
+
+page-lancamento .teclado {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+page-lancamento .estrutura_input {
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 40px;
+  height: 54px;
+  margin-top: 30px;
+}
+
+page-lancamento .cor-vermelha {
+  color: #F44336;
+}
+
+page-lancamento .cor-verde {
+  color: #4CAF50;
+}
+
+page-lancamento .cor-cinza {
+  color: #9E9E9E;
+}
+
+page-lancamento .tamanho {
+  font-size: 45px;
+}
+
+page-lancamento .cifrao {
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+page-lancamento .grid-basic-page ion-col div {
+  padding: 5px;
+  text-align: center;
+}
+
+page-lancamento div button .button-inner {
+  font-size: 40px;
+}
+
 page-teclado ion-navbar.red div.toolbar-background {
   border-color: #F44336;
   background: #F44336;

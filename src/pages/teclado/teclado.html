@@ -97,7 +97,7 @@
         </ion-row>
     </ion-grid>
     <ion-fab center bottom>
-        <button ion-fab
+        <button ion-fab (click)="registerLaunch(tipo, valor)"
             [color]= "{'despesa':'danger','receita':'secondary','transferencia':'gray'}[tipo]"
         ><ion-icon ios="ios-checkmark" md="md-checkmark"></ion-icon></button>
     </ion-fab>

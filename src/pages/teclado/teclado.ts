@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { LancamentoPage } from '../lancamento/lancamento';
 
 @Component({
   selector: 'page-teclado',
@@ -23,6 +24,10 @@ export class TecladoPage {
   removeOfList(){
       this.numeros.pop();
       this.valor = this.numeros.join('') 
+  }
+
+  registerLaunch(tipo, valor){
+    this.navCtrl.push(LancamentoPage, {valor: valor, tipo: tipo})
   }
 }
 
