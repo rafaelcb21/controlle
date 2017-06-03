@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar 
+    [ngClass]="{'despesa':'red','receita':'green','transferencia':'gray'}[tipo]"
+  >
+
+  </ion-navbar>
+</ion-header>
+<ion-content class="grid-basic-page">
+    <div class='teclado estrutura_input'>
+        <div class='cifrao'
+            [ngClass]="{'despesa':'cor-vermelha','receita':'cor-verde','transferencia':'cor-cinza'}[tipo]"
+        >R$</div>
+        <span class='tamanho'
+            [ngClass]="{'despesa':'cor-vermelha','receita':'cor-verde','transferencia':'cor-cinza'}[tipo]"
+        >{{ valor | numerobrasil }}</span>
+    </div>
+   
+    <ion-fab center bottom>
+        <button ion-fab
+            [color]= "{'despesa':'danger','receita':'secondary','transferencia':'gray'}[tipo]"
+        ><ion-icon ios="ios-checkmark" md="md-checkmark"></ion-icon></button>
+    </ion-fab>
+</ion-content>
+
+
+
+
+   

@@ -1,0 +1,76 @@
+page-lancamento {
+    
+    ion-navbar.red div.toolbar-background {
+        border-color: #F44336;
+        background: #F44336;
+    }
+
+    ion-navbar.green div.toolbar-background {
+        border-color: #4CAF50;
+        background: #4CAF50;
+    }
+
+    ion-navbar.gray div.toolbar-background {
+        border-color: #9E9E9E;
+        background: #9E9E9E;
+    }
+
+    .bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default {
+        color: #fff;
+    }
+
+    .bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default {
+        color: #fff;
+    }
+
+    .bar-button-default-wp, .bar-button-clear-wp-default, .bar-button-wp-default {
+        color: #fff;
+    }
+
+    .teclado {
+        display: flex;
+    }
+
+    .estrutura_input{
+        justify-content: flex-end;
+        align-content: center;
+        align-items: center;
+        padding: 40px;
+        height: 54px;
+        margin-top: 30px;
+    }
+
+    .cor-vermelha {
+        color: #F44336
+    }
+    .cor-verde {
+        color: #4CAF50
+    }
+    .cor-cinza {
+        color: #9E9E9E
+    }
+
+    .tamanho {
+        font-size: 45px;
+    }
+
+    .cifrao {
+        font-size: 20px;
+        padding-right: 10px;
+    }
+
+    .grid-basic-page {
+        ion-col div {
+            padding: 5px;
+            text-align: center;
+        }
+    }
+
+    div button .button-inner {
+        font-size: 40px;
+    }
+
+
+
+
+}
