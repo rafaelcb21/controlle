@@ -21,7 +21,7 @@ export class TecladoPage {
   }
 
   removeOfList(){
-      this.numeros.shift();
+      this.numeros.pop();
       this.valor = this.numeros.join('') 
   }
 }
