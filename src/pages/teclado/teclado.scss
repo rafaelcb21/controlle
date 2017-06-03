@@ -1,7 +1,18 @@
 page-teclado {
-    .toolbar-background {
+    
+    ion-navbar.red div.toolbar-background {
         border-color: #F44336;
         background: #F44336;
+    }
+
+    ion-navbar.green div.toolbar-background {
+        border-color: #4CAF50;
+        background: #4CAF50;
+    }
+
+    ion-navbar.gray div.toolbar-background {
+        border-color: #9E9E9E;
+        background: #9E9E9E;
     }
 
     .bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default {
@@ -20,13 +31,6 @@ page-teclado {
         display: flex;
     }
 
-    .estrutura {
-        justify-content: space-around;
-        align-content: center;
-        align-items: center;
-        padding-bottom: 25px;
-    }
-
     .estrutura_input{
         justify-content: flex-end;
         align-content: center;
@@ -36,13 +40,21 @@ page-teclado {
         margin-top: 30px;
     }
 
-    .cor {
-        color: #F44336;
+    .cor-vermelha {
+        color: #F44336
+    }
+    .cor-verde {
+        color: #4CAF50
+    }
+    .cor-cinza {
+        color: #9E9E9E
+    }
+
+    .tamanho {
         font-size: 45px;
     }
 
     .cifrao {
-        color: #F44336;
         font-size: 20px;
         padding-right: 10px;
     }

@@ -8,12 +8,14 @@ import 'rxjs/add/operator/toPromise';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { TecladoPage } from '../pages/teclado/teclado';
+import { NumberBrasil } from '../pages/teclado/teclado.pipe';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     TecladoPage,
+    NumberBrasil,
   ],
   imports: [
     BrowserModule,
