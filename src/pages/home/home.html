@@ -10,16 +10,16 @@
   <ion-card>
     <ion-card-header>
       <div class='saldo'><div class='saldo_cifrao'>R$</div><div class='saldo_valor'>3.051,00</div></div>
-      <div class='saldo_geral_text'>saldo geral</div> 
-    </ion-card-header> 
-    <ion-card-content>      
+      <div class='saldo_geral_text'>saldo geral</div>
+    </ion-card-header>
+    <ion-card-content>
       <ion-list>
         <ion-item>
-          <div class='periodo'>20/05 - 19/06</div>           
+          <div class='periodo'>20/05 - 19/06</div>
           <div class='resumo'><div class='cardcredit_detail'>Receita:</div><div class='resultado receita'>R$ 3.051,00</div></div>
           <div class='resumo'><div class='cardcredit_detail'>Despesa:</div><div class='resultado despesa'>R$ -2.587,00</div></div>
           <div class='resumo'><div class='cardcredit_detail'>Resultado:</div><div class='resultado receita'>R$ 464,00</div></div>
-        </ion-item>        
+        </ion-item>
       </ion-list>
     </ion-card-content>
   </ion-card>
@@ -27,17 +27,17 @@
   <ion-card>
     <ion-card-header>
       <span class='cardheader'>Contas</span>
-    </ion-card-header>  
+    </ion-card-header>
     <ion-card-content>
       <ion-list>
         <button ion-item>
           <ion-avatar item-left>
             <img src="./assets/img/card-logo-amex.svg">
           </ion-avatar>
-          <div class='cardcredit'>Caixa</div>            
+          <div class='cardcredit'>Caixa</div>
           <div class='cardcredit_detail'>Conta corrente</div>
           <div class='conta'>R$ 3051,00</div>
-        </button>        
+        </button>
       </ion-list>
     </ion-card-content>
   </ion-card>
@@ -45,14 +45,14 @@
   <ion-card>
     <ion-card-header>
       <span class='cardheader'>Cartões de créditos</span>
-    </ion-card-header>  
+    </ion-card-header>
     <ion-card-content>
       <ion-list>
         <button ion-item>
           <ion-avatar item-left>
             <img src="./assets/img/card-logo-visa.svg">
           </ion-avatar>
-          <div class='cardcredit'>Santander Plantinum</div>            
+          <div class='cardcredit'>Santander Plantinum</div>
           <div class='cardcredit_detail'>Fatura<span class='cardcredit_number_fatura'>R$ -600,00</span></div>
           <div class='cardcredit_detail'>Limite<span class='cardcredit_number_limite'>R$ 600,00</span></div>
         </button>
@@ -61,8 +61,8 @@
         <button ion-item>
           <ion-avatar item-left>
             <img src="./assets/img/card-logo-mastercard.svg">
-          </ion-avatar>         
-          <div class='cardcredit'>Santander Plantinum</div>            
+          </ion-avatar>
+          <div class='cardcredit'>Santander Plantinum</div>
           <div class='cardcredit_detail'>Fatura<span class='cardcredit_number_fatura'>R$ -600,00</span></div>
           <div class='cardcredit_detail'>Limite<span class='cardcredit_number_limite'>R$ 600,00</span></div>
         </button>
@@ -72,12 +72,12 @@
 
   <ion-card>
     <ion-card-header>
-      <span class='cardheader'>Alertas da semana</span>    
-    </ion-card-header>  
+      <span class='cardheader'>Alertas da semana</span>
+    </ion-card-header>
     <ion-card-content>
       <div class='alerta_semana'>
         <div class='style_alerta_semana'>
-          <div class='style_alerta_semana_flex'><div style='color:#4CAF50' class='style_alerta_semana_numero'>0</div></div>
+          <div class='style_alerta_semana_flex'><div class='style_alerta_semana_numero verde'>0</div></div>
           <div class='style_alerta_semana_flex'>contas a receber</div>
         </div>
         <div class='style_alerta_semana'>
@@ -99,8 +99,8 @@
   <ion-fab right bottom #fab>
     <button ion-fab color="danger"><ion-icon ios="logo-usd" md="logo-usd"></ion-icon></button>
     <ion-fab-list side="top">
-      <button ion-fab color="danger" (click)="teclado('despesa', fab)" ><ion-icon ios="ios-thumbs-down" md="md-thumbs-down"></ion-icon></button>
-      <button ion-fab color="secondary" (click)="teclado('receita', fab)"><ion-icon ios="ios-thumbs-up" md="md-thumbs-up"></ion-icon></button>
+      <button ion-fab color="danger" (click)="teclado('despesa', fab)" ><ion-icon ios="ios-cash" md="md-cash"></ion-icon></button>
+      <button ion-fab color="secondary" (click)="teclado('receita', fab)"><ion-icon ios="ios-cash" md="md-cash"></ion-icon></button>
       <button ion-fab color="gray" (click)="teclado('transferencia', fab)"><ion-icon ios="ios-redo" md="md-redo"></ion-icon></button>
     </ion-fab-list>
   </ion-fab>

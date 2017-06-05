@@ -1,56 +1,56 @@
 <ion-header>
   <ion-navbar hideBackButton="true"
-    [ngClass]="{'despesa':'red','receita':'green','transferencia':'gray'}[_tipo]"
+    [ngClass]="{'despesa':'red','receita':'green','transferencia':'gray'}[tipo]"
   >
-
+  <ion-title class="cor-branco">{{ cabecalho }}</ion-title>
   </ion-navbar>
 </ion-header>
 <ion-content class="grid-basic-page">
     <div class='teclado estrutura_input'>
         <div class='cifrao'
-            [ngClass]="{'despesa':'cor-vermelha','receita':'cor-verde','transferencia':'cor-cinza'}[_tipo]"
+            [ngClass]="{'despesa':'cor-vermelha','receita':'cor-verde','transferencia':'cor-cinza'}[tipo]"
         >R$</div>
         <span class='tamanho'
-            [ngClass]="{'despesa':'cor-vermelha','receita':'cor-verde','transferencia':'cor-cinza'}[_tipo]"
-        >{{ _valor | numerobrasil }}</span>
+            [ngClass]="{'despesa':'cor-vermelha','receita':'cor-verde','transferencia':'cor-cinza'}[tipo]"
+        >{{ valor | numerobrasil }}</span>
     </div>
     <ion-grid class='keyboard'>
         <ion-row>
             <ion-col col-4>
                 <div><button ion-button round clear
-                [color]= "{'despesa':'danger','receita':'secondary','transferencia':'gray'}[_tipo]"
+                [color]= "{'despesa':'danger','receita':'secondary','transferencia':'gray'}[tipo]"
             class='size_teclado'
                 (click)="adicionarNaLista('1')">1</button></div>
             </ion-col>
             <ion-col col-4>
                 <div><button ion-button round clear
-                [color]= "{'despesa':'danger','receita':'secondary','transferencia':'gray'}[_tipo]"
+                [color]= "{'despesa':'danger','receita':'secondary','transferencia':'gray'}[tipo]"
                 class='size_teclado'
                 (click)="adicionarNaLista('2')">2</button></div>
             </ion-col>
             <ion-col col-4>
                 <div><button ion-button round clear
-                [color]= "{'despesa':'danger','receita':'secondary','transferencia':'gray'}[_tipo]"
+                [color]= "{'despesa':'danger','receita':'secondary','transferencia':'gray'}[tipo]"
                 class='size_teclado'
                 (click)="adicionarNaLista('3')">3</button></div>
             </ion-col>
         </ion-row>
         <ion-row>
             <ion-col col-4>
-                <div><button ion-button round clear 
-                [color]= "{'despesa':'danger','receita':'secondary','transferencia':'gray'}[_tipo]"
+                <div><button ion-button round clear
+                [color]= "{'despesa':'danger','receita':'secondary','transferencia':'gray'}[tipo]"
                 class='size_teclado'
                 (click)="adicionarNaLista('4')">4</button></div>
             </ion-col>
             <ion-col col-4>
-                <div><button ion-button round clear 
-                [color]= "{'despesa':'danger','receita':'secondary','transferencia':'gray'}[_tipo]"
+                <div><button ion-button round clear
+                [color]= "{'despesa':'danger','receita':'secondary','transferencia':'gray'}[tipo]"
                 class='size_teclado'
                 (click)="adicionarNaLista('5')">5</button></div>
             </ion-col>
             <ion-col col-4>
                 <div><button ion-button round clear
-                [color]= "{'despesa':'danger','receita':'secondary','transferencia':'gray'}[_tipo]"
+                [color]= "{'despesa':'danger','receita':'secondary','transferencia':'gray'}[tipo]"
                 class='size_teclado'
                 (click)="adicionarNaLista('6')">6</button></div>
             </ion-col>
@@ -58,19 +58,19 @@
         <ion-row>
             <ion-col col-4>
                 <div><button ion-button round clear
-                [color]= "{'despesa':'danger','receita':'secondary','transferencia':'gray'}[_tipo]"
+                [color]= "{'despesa':'danger','receita':'secondary','transferencia':'gray'}[tipo]"
                 class='size_teclado'
                 (click)="adicionarNaLista('7')">7</button></div>
             </ion-col>
             <ion-col col-4>
                 <div><button ion-button round clear
-                [color]= "{'despesa':'danger','receita':'secondary','transferencia':'gray'}[_tipo]"
+                [color]= "{'despesa':'danger','receita':'secondary','transferencia':'gray'}[tipo]"
                 class='size_teclado'
                 (click)="adicionarNaLista('8')">8</button></div>
             </ion-col>
             <ion-col col-4>
                 <div><button ion-button round clear
-                [color]= "{'despesa':'danger','receita':'secondary','transferencia':'gray'}[_tipo]"
+                [color]= "{'despesa':'danger','receita':'secondary','transferencia':'gray'}[tipo]"
                 class='size_teclado'
                 (click)="adicionarNaLista('9')">9</button></div>
             </ion-col>
@@ -81,14 +81,14 @@
             </ion-col>
             <ion-col col-4>
                 <div><button ion-button round clear
-                [color]= "{'despesa':'danger','receita':'secondary','transferencia':'gray'}[_tipo]"
+                [color]= "{'despesa':'danger','receita':'secondary','transferencia':'gray'}[tipo]"
                 class='size_teclado'
                 (click)="adicionarNaLista('0')">0</button></div>
             </ion-col>
             <ion-col col-4>
                 <div>
                     <button ion-button
-                        [color]= "{'despesa':'danger','receita':'secondary','transferencia':'gray'}[_tipo]"
+                        [color]= "{'despesa':'danger','receita':'secondary','transferencia':'gray'}[tipo]"
                         clear icon-only style="width: 70px;" (click)='removerDaLista()'>
                         <ion-icon ios="ios-backspace" md="md-backspace" is-active="false"></ion-icon>
                     </button>
@@ -97,13 +97,12 @@
         </ion-row>
     </ion-grid>
     <ion-fab center bottom>
-        <button ion-fab (click)='registarLancamento(_tipo, _valor)'
-            [color]= "{'despesa':'danger','receita':'secondary','transferencia':'gray'}[_tipo]"
+        <button ion-fab (click)='registarLancamento(tipo, valor)'
+            [color]= "{'despesa':'danger','receita':'secondary','transferencia':'gray'}[tipo]"
         ><ion-icon ios="ios-checkmark" md="md-checkmark"></ion-icon></button>
-    </ion-fab>    
+    </ion-fab>
 </ion-content>
 
 
 
 
-   

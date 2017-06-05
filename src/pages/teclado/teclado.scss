@@ -1,30 +1,39 @@
+$verde: #66BB6A;
+$vermelho: #F44336;
+$cinza: #9E9E9E;
+$branco: #fff;
+
 page-teclado {
-    
+
     ion-navbar.red div.toolbar-background {
-        border-color: #F44336;
-        background: #F44336;
+        border-color: $vermelho;
+        background: $vermelho;
     }
 
     ion-navbar.green div.toolbar-background {
-        border-color: #4CAF50;
-        background: #4CAF50;
+        border-color: $verde;
+        background: $verde;
     }
 
     ion-navbar.gray div.toolbar-background {
-        border-color: #9E9E9E;
-        background: #9E9E9E;
+        border-color: $cinza;
+        background: $cinza;
+    }
+
+    .toolbar-title-md, .toolbar-title-ios, .toolbar-title-wp {
+      color: $branco;
     }
 
     .bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default {
-        color: #fff;
+        color: $branco;
     }
 
     .bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default {
-        color: #fff;
+        color: $branco;
     }
 
     .bar-button-default-wp, .bar-button-clear-wp-default, .bar-button-wp-default {
-        color: #fff;
+        color: $branco;
     }
 
     .teclado {
@@ -35,19 +44,22 @@ page-teclado {
         justify-content: flex-end;
         align-content: center;
         align-items: center;
-        padding: 40px;
+        padding-top: 30px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 30px;
         height: 54px;
         /*margin-top: 30px;*/
     }
 
     .cor-vermelha {
-        color: #F44336
+        color: $vermelho;
     }
     .cor-verde {
-        color: #4CAF50
+        color: $verde;
     }
     .cor-cinza {
-        color: #9E9E9E
+        color: $cinza;
     }
 
     .tamanho {

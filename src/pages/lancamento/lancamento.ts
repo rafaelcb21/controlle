@@ -10,9 +10,13 @@ import { HomePage } from '../home/home';
 })
 export class LancamentoPage {
 
-  private _tipo: string;
-  private _valor: string = '';
-  private _data: string;
+  public tipo: string;
+  public valor: string = '';
+  public data: string;
+  public categoria: string;
+  public cartao: string;
+  public mesFatura: string;
+  public selectFatura: boolean = false;
 
   constructor(
     public navCtrl: NavController,
@@ -20,13 +24,12 @@ export class LancamentoPage {
     private view: ViewController,
     public modalCtrl: ModalController
   ){
-    this._valor = navParams.get('valor');
-    this._tipo = navParams.get('tipo');
-    this._data = new Date().toISOString();
+    this.valor = navParams.get('valor');
+    this.tipo = navParams.get('tipo');
+    this.data = new Date().toISOString();
   }
 
-
-  abrirModalCategoria(tipo) {
+    abrirModalCategoria(tipo) {
     let modal = this.modalCtrl.create(CategoriaModalPage, tipo);
     modal.present();
   }
@@ -34,6 +37,12 @@ export class LancamentoPage {
   abrirModalConta(tipo) {
     let modal = this.modalCtrl.create(ContaModalPage, tipo);
     modal.present();
+  }
+
+  fatura(event){
+    if(event.slice(0,6) == "cartao") {
+      this.selectFatura = true;
+    }
   }
 
   sair(){

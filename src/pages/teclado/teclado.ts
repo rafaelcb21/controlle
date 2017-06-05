@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { LancamentoPage } from '../lancamento/lancamento';
 
@@ -6,24 +6,37 @@ import { LancamentoPage } from '../lancamento/lancamento';
   selector: 'page-teclado',
   templateUrl: 'teclado.html',
 })
-export class TecladoPage {
+export class TecladoPage implements OnInit{
 
-  private _tipo: string;
-  private _numeros: string[] = [];
-  private _valor: string = '';
+  public tipo: string;
+  public numeros: string[] = [];
+  public valor: string = '';
+  public cabecalho: string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this._tipo = navParams.get('tipo');
+    this.tipo = navParams.get('tipo');
   }
 
-  adicionarNaLista(number){    
-      this._numeros.push(number);
-      this._valor = this._numeros.join('')
+  ngOnInit(){
+    if(this.tipo == "despesa") {
+      this.cabecalho = "Despesa"
+    }
+    if(this.tipo == "receita") {
+      this.cabecalho = "Receita"
+    }
+    if(this.tipo == "transferencia") {
+      this.cabecalho = "Transferência"
+    }
+  }
+
+  adicionarNaLista(number){
+      this.numeros.push(number);
+      this.valor = this.numeros.join('')
   }
 
   removerDaLista(){
-      this._numeros.pop();
-      this._valor = this._numeros.join('') 
+      this.numeros.pop();
+      this.valor = this.numeros.join('')
   }
 
   registarLancamento(tipo, valor){

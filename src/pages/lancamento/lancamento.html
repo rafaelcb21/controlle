@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar hideBackButton="true"
-    [ngClass]="{'despesa':'red','receita':'green','transferencia':'gray'}[_tipo]"
+    [ngClass]="{'despesa':'red','receita':'green','transferencia':'gray'}[tipo]"
   >
     <ion-buttons start>
       <button ion-button (click)="sair()">
@@ -13,20 +13,20 @@
 <ion-content class="grid-basic-page">
     <div class='teclado estrutura_input'>
         <div class='cifrao'
-            [ngClass]="{'despesa':'cor-vermelha','receita':'cor-verde','transferencia':'cor-cinza'}[_tipo]"
+            [ngClass]="{'despesa':'cor-vermelha','receita':'cor-verde','transferencia':'cor-cinza'}[tipo]"
         >R$</div>
         <span class='tamanho'
-            [ngClass]="{'despesa':'cor-vermelha','receita':'cor-verde','transferencia':'cor-cinza'}[_tipo]"
-        >{{ _valor | numerobrasil }}</span>
+            [ngClass]="{'despesa':'cor-vermelha','receita':'cor-verde','transferencia':'cor-cinza'}[tipo]"
+        >{{ valor | numerobrasil }}</span>
     </div>
     <ion-list>
         <ion-item>
             <ion-label floating class='cor-label'>Data</ion-label>
-            <ion-datetime  displayFormat="MM/DD/YY" [(ngModel)]="_data"></ion-datetime>
+            <ion-datetime  displayFormat="MM/DD/YY" [(ngModel)]="data"></ion-datetime>
         </ion-item>
 
         <!--div>
-            <button ion-button color="light" small (click)='abrirModalCategoria({tipo:_tipo})' clear>Light Clear</button>
+            <button ion-button color="light" small (click)='abrirModalCategoria({tipo:tipo})' clear>Light Clear</button>
         </div-->
         <ion-item>
             <ion-label floating class='cor-label'>Categoria</ion-label>
@@ -45,28 +45,31 @@
                 <ion-option value="cosmeticos">>> Cosméticos</ion-option>
                 <ion-option value="drogaria">>> Drogaria</ion-option>
                 <ion-option value="telefonia">Telefonia</ion-option>
-                <ion-option value="transporte">Transporte</ion-option>  
-                <ion-option value="vestuario">Vestuário</ion-option>                
-            </ion-select>            
+                <ion-option value="transporte">Transporte</ion-option>
+                <ion-option value="vestuario">Vestuário</ion-option>
+            </ion-select>
         </ion-item>
-        
+
         <ion-item>
             <ion-label floating class='cor-label'>Conta/Cartão</ion-label>
-            <ion-select [(ngModel)]="cartao">
+            <ion-select [(ngModel)]="cartao" (ngModelChange)="fatura($event)">
                 <ion-option value="alimentacao">Caixa</ion-option>
                 <ion-option value="cartao-1">Platinum Caixa Visa</ion-option>
                 <ion-option value="cartao-2">Santander FIT Mastercard</ion-option>
-                <ion-option value="cartao-3">Santander FREE Visa</ion-option>              
-            </ion-select> 
+                <ion-option value="cartao-3">Santander FREE Visa</ion-option>
+            </ion-select>
         </ion-item>
-        <ion-item>
+        <ion-item *ngIf="selectFatura">
             <ion-label stacked class='cor-label'>Lançado na fatura de</ion-label>
-            <ion-select [(ngModel)]="cartao">
-                <ion-option value="alimentacao">Julho de 2017</ion-option>
-                <ion-option value="cartao-1">Platinum Caixa Visa</ion-option>
-                <ion-option value="cartao-2">Santander FIT Mastercard</ion-option>
-                <ion-option value="cartao-3">Santander FREE Visa</ion-option>              
-            </ion-select> 
+            <ion-select [(ngModel)]="mesFatura">
+                <ion-option value="fatura-3">Março de 2017</ion-option>
+                <ion-option value="fatura-4">Abril de 2017</ion-option>
+                <ion-option value="fatura-5">Maio de 2017</ion-option>
+                <ion-option value="fatura-6">Junho de 2017</ion-option>
+                <ion-option value="fatura-7">Julho de 2017</ion-option>
+                <ion-option value="fatura-8">Agosto de 2017</ion-option>
+                <ion-option value="fatura-9">Setembro de 2017</ion-option>
+            </ion-select>
         </ion-item>
         <ion-item>
             <ion-label floating class='cor-label'>Descrição</ion-label>
@@ -75,7 +78,7 @@
     </ion-list>
     <ion-fab center bottom>
         <button ion-fab
-            [color]= "{'despesa':'danger','receita':'secondary','transferencia':'gray'}[_tipo]"
+            [color]= "{'despesa':'danger','receita':'secondary','transferencia':'gray'}[tipo]"
         ><ion-icon ios="ios-checkmark" md="md-checkmark"></ion-icon></button>
     </ion-fab>
 </ion-content>
@@ -83,4 +86,3 @@
 
 
 
-   
