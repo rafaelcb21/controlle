@@ -10,6 +10,8 @@ import { HomePage } from '../pages/home/home';
 import { TecladoPage } from '../pages/teclado/teclado';
 import { NumberBrasil } from '../pages/teclado/teclado.pipe';
 import { LancamentoPage } from '../pages/lancamento/lancamento';
+import { CategoriaModalPage } from '../pages/categoria-modal/categoria-modal';
+import { ContaModalPage } from '../pages/conta-modal/conta-modal';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { LancamentoPage } from '../pages/lancamento/lancamento';
     TecladoPage,
     NumberBrasil,
     LancamentoPage,
+    CategoriaModalPage,
+    ContaModalPage,
   ],
   imports: [
     BrowserModule,
@@ -29,6 +33,8 @@ import { LancamentoPage } from '../pages/lancamento/lancamento';
     HomePage,
     TecladoPage,
     LancamentoPage,
+    CategoriaModalPage,
+    ContaModalPage,
   ],
   providers: [
     StatusBar,

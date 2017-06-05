@@ -4,29 +4,29 @@ import { LancamentoPage } from '../lancamento/lancamento';
 
 @Component({
   selector: 'page-teclado',
-  templateUrl: 'teclado.html'
+  templateUrl: 'teclado.html',
 })
 export class TecladoPage {
 
-  private tipo;
-  private numeros = [];
-  private valor = '';
-  
+  private _tipo: string;
+  private _numeros: string[] = [];
+  private _valor: string = '';
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.tipo = navParams.get('tipo');
+    this._tipo = navParams.get('tipo');
   }
 
-  addInList(number){    
-      this.numeros.push(number);
-      this.valor = this.numeros.join('')
+  adicionarNaLista(number){    
+      this._numeros.push(number);
+      this._valor = this._numeros.join('')
   }
 
-  removeOfList(){
-      this.numeros.pop();
-      this.valor = this.numeros.join('') 
+  removerDaLista(){
+      this._numeros.pop();
+      this._valor = this._numeros.join('') 
   }
 
-  registerLaunch(tipo, valor){
+  registarLancamento(tipo, valor){
     this.navCtrl.push(LancamentoPage, {valor: valor, tipo: tipo})
   }
 }

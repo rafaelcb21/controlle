@@ -1,23 +1,81 @@
 <ion-header>
-  <ion-navbar 
-    [ngClass]="{'despesa':'red','receita':'green','transferencia':'gray'}[tipo]"
+  <ion-navbar hideBackButton="true"
+    [ngClass]="{'despesa':'red','receita':'green','transferencia':'gray'}[_tipo]"
   >
-
+    <ion-buttons start>
+      <button ion-button (click)="sair()">
+        <span ion-text color="white" showWhen="ios">Cancel</span>
+        <ion-icon name="md-close" showWhen="android, windows"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 <ion-content class="grid-basic-page">
     <div class='teclado estrutura_input'>
         <div class='cifrao'
-            [ngClass]="{'despesa':'cor-vermelha','receita':'cor-verde','transferencia':'cor-cinza'}[tipo]"
+            [ngClass]="{'despesa':'cor-vermelha','receita':'cor-verde','transferencia':'cor-cinza'}[_tipo]"
         >R$</div>
         <span class='tamanho'
-            [ngClass]="{'despesa':'cor-vermelha','receita':'cor-verde','transferencia':'cor-cinza'}[tipo]"
-        >{{ valor | numerobrasil }}</span>
+            [ngClass]="{'despesa':'cor-vermelha','receita':'cor-verde','transferencia':'cor-cinza'}[_tipo]"
+        >{{ _valor | numerobrasil }}</span>
     </div>
-   
+    <ion-list>
+        <ion-item>
+            <ion-label floating class='cor-label'>Data</ion-label>
+            <ion-datetime  displayFormat="MM/DD/YY" [(ngModel)]="_data"></ion-datetime>
+        </ion-item>
+
+        <!--div>
+            <button ion-button color="light" small (click)='abrirModalCategoria({tipo:_tipo})' clear>Light Clear</button>
+        </div-->
+        <ion-item>
+            <ion-label floating class='cor-label'>Categoria</ion-label>
+            <ion-select [(ngModel)]="categoria">
+                <ion-option value="alimentacao">Alimentação</ion-option>
+                <ion-option value="cartao">Cartão</ion-option>
+                <ion-option value="educacao">Educação</ion-option>
+                <ion-option value="cultura">>> Cultura</ion-option>
+                <ion-option value="lazer">Lazer</ion-option>
+                <ion-option value="moradoa">Moradia</ion-option>
+                <ion-option value="eletronico">>> Eletronico</ion-option>
+                <ion-option value="hotel">>> Hotel</ion-option>
+                <ion-option value="outros">Outros</ion-option>
+                <ion-option value="salario">Salário</ion-option>
+                <ion-option value="saude">Saúde</ion-option>
+                <ion-option value="cosmeticos">>> Cosméticos</ion-option>
+                <ion-option value="drogaria">>> Drogaria</ion-option>
+                <ion-option value="telefonia">Telefonia</ion-option>
+                <ion-option value="transporte">Transporte</ion-option>  
+                <ion-option value="vestuario">Vestuário</ion-option>                
+            </ion-select>            
+        </ion-item>
+        
+        <ion-item>
+            <ion-label floating class='cor-label'>Conta/Cartão</ion-label>
+            <ion-select [(ngModel)]="cartao">
+                <ion-option value="alimentacao">Caixa</ion-option>
+                <ion-option value="cartao-1">Platinum Caixa Visa</ion-option>
+                <ion-option value="cartao-2">Santander FIT Mastercard</ion-option>
+                <ion-option value="cartao-3">Santander FREE Visa</ion-option>              
+            </ion-select> 
+        </ion-item>
+        <ion-item>
+            <ion-label stacked class='cor-label'>Lançado na fatura de</ion-label>
+            <ion-select [(ngModel)]="cartao">
+                <ion-option value="alimentacao">Julho de 2017</ion-option>
+                <ion-option value="cartao-1">Platinum Caixa Visa</ion-option>
+                <ion-option value="cartao-2">Santander FIT Mastercard</ion-option>
+                <ion-option value="cartao-3">Santander FREE Visa</ion-option>              
+            </ion-select> 
+        </ion-item>
+        <ion-item>
+            <ion-label floating class='cor-label'>Descrição</ion-label>
+            <ion-input type="text"></ion-input>
+        </ion-item>
+    </ion-list>
     <ion-fab center bottom>
         <button ion-fab
-            [color]= "{'despesa':'danger','receita':'secondary','transferencia':'gray'}[tipo]"
+            [color]= "{'despesa':'danger','receita':'secondary','transferencia':'gray'}[_tipo]"
         ><ion-icon ios="ios-checkmark" md="md-checkmark"></ion-icon></button>
     </ion-fab>
 </ion-content>
