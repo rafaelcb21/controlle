@@ -1,0 +1,100 @@
+<ion-header>
+  <ion-navbar
+    [ngClass]="{'despesa':'red','receita':'green','transferencia':'gray'}[_tipo]"
+  > 
+  <ion-buttons start>
+      <button ion-button (click)="sair()">
+        <span ion-text color="white" showWhen="ios">Cancel</span>
+        <ion-icon name="md-close" showWhen="android, windows"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list radio-group [(ngModel)]="repetir">
+    <ion-item>
+      <ion-label>Fixo</ion-label>
+      <ion-radio value="fixo" (click)="fixoRadio()"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Parcelado</ion-label>
+      <ion-radio value="parcelado"></ion-radio>
+    </ion-item>
+  </ion-list>
+
+  <ion-item>
+      <ion-label>{{ periodoEscolhido }}</ion-label>    
+  </ion-item>
+
+ <!--ion-list radio-group [(ngModel)]="periodo-fixo" *ngIf="repetir=='fixo'">
+    <ion-list-header>
+      Período
+    </ion-list-header>
+    <ion-item>
+      <ion-label>Diária</ion-label>
+      <ion-radio value="diaria"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Semanal</ion-label>
+      <ion-radio value="semanal"></ion-radio>
+    </ion-item>
+        <ion-item>
+      <ion-label>Quinzenal</ion-label>
+      <ion-radio value="quinzenal"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Mensal</ion-label>
+      <ion-radio value="mensal"></ion-radio>
+    </ion-item>
+        <ion-item>
+      <ion-label>Bimestral</ion-label>
+      <ion-radio value="bimestral"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Trimestral</ion-label>
+      <ion-radio value="trimestral"></ion-radio>
+    </ion-item>
+        <ion-item>
+      <ion-label>Semestral</ion-label>
+      <ion-radio value="semestral"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Anual</ion-label>
+      <ion-radio value="anual"></ion-radio>
+    </ion-item>
+  </ion-list-->
+
+  <!--ion-content padding>
+  <ion-list radio-group [(ngModel)]="repetir">
+    <ion-item>
+      <ion-label>Fixo</ion-label>
+      <ion-radio value="fixo" (click)="fixoRadio()"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Parcelado</ion-label>
+      <ion-radio value="parcelado"></ion-radio>
+    </ion-item>
+  </ion-list>
+
+  <ion-item-group *ngIf="periodoFixo">
+    <ion-item-divider color="light">Período</ion-item-divider>
+    <ion-item>{{ periodoEscolhido }}</ion-item>
+  </ion-item-group>
+</ion-content-->
+
+  <div *ngIf="repetir=='parcelado'">Parcelado</div>
+  <ion-item *ngIf="repetir=='fixo'">
+    <ion-select [(ngModel)]="periodo-fixo">
+        <ion-option value="diaria">Diária</ion-option>
+        <ion-option value="semanal">Semanal</ion-option>
+        <ion-option value="quinzenal">Quinzenal</ion-option>
+        <ion-option value="mensal">>> Mensal</ion-option>
+        <ion-option value="bimestral">Bimestral</ion-option>
+        <ion-option value="trimestral">Trimestral</ion-option>
+        <ion-option value="semestral">>> Semestral</ion-option>
+        <ion-option value="anual">>> Anual</ion-option>
+    </ion-select>
+  </ion-item>
+</ion-content>

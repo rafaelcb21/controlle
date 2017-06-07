@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams, ViewController, ModalController } from 'ionic-angular';
 import { CategoriaModalPage } from '../categoria-modal/categoria-modal';
-import { ContaModalPage } from '../conta-modal/conta-modal';
+import { RepetirModalPage } from '../repetir-modal/repetir-modal';
 import { HomePage } from '../home/home';
 
 @Component({
@@ -17,6 +17,7 @@ export class LancamentoPage {
   public cartao: string;
   public mesFatura: string;
   public selectFatura: boolean = false;
+  public observacao: boolean = false;
 
   constructor(
     public navCtrl: NavController,
@@ -29,13 +30,13 @@ export class LancamentoPage {
     this.data = new Date().toISOString();
   }
 
-    abrirModalCategoria(tipo) {
+  abrirModalCategoria(tipo) {
     let modal = this.modalCtrl.create(CategoriaModalPage, tipo);
     modal.present();
   }
 
-  abrirModalConta(tipo) {
-    let modal = this.modalCtrl.create(ContaModalPage, tipo);
+  abrirModalRepetir(tipo) {
+    let modal = this.modalCtrl.create(RepetirModalPage, {tipo: tipo});
     modal.present();
   }
 
@@ -47,6 +48,10 @@ export class LancamentoPage {
 
   sair(){
     this.navCtrl.setRoot(HomePage);
+  }
+
+  campoObservacao(status){
+    this.observacao = status;
   }
 }
 

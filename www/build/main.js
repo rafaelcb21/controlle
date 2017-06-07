@@ -30026,7 +30026,7 @@ var /** @type {?} */ menuTypes = {};
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_app_app_root__ = __webpack_require__(53);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__components_app_app_root__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_app_menu_controller__ = __webpack_require__(23);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_1__components_app_menu_controller__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return __WEBPACK_IMPORTED_MODULE_1__components_app_menu_controller__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_action_sheet_action_sheet__ = __webpack_require__(50);
 /* unused harmony reexport ActionSheet */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_action_sheet_action_sheet_controller__ = __webpack_require__(108);
@@ -30036,7 +30036,7 @@ var /** @type {?} */ menuTypes = {};
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_alert_alert__ = __webpack_require__(52);
 /* unused harmony reexport Alert */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_alert_alert_controller__ = __webpack_require__(109);
-/* unused harmony reexport AlertController */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_6__components_alert_alert_controller__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_alert_alert_component__ = __webpack_require__(51);
 /* unused harmony reexport AlertCmp */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_app_app__ = __webpack_require__(6);
@@ -30130,7 +30130,7 @@ var /** @type {?} */ menuTypes = {};
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__components_modal_modal_component__ = __webpack_require__(66);
 /* unused harmony reexport ModalCmp */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__components_modal_modal_controller__ = __webpack_require__(138);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_53__components_modal_modal_controller__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_53__components_modal_modal_controller__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__components_nav_nav__ = __webpack_require__(69);
 /* unused harmony reexport Nav */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__components_nav_nav_pop__ = __webpack_require__(67);
@@ -30249,7 +30249,7 @@ var /** @type {?} */ menuTypes = {};
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_110__platform_dom_controller__ = __webpack_require__(8);
 /* unused harmony reexport DomController */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_111__platform_platform__ = __webpack_require__(3);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return __WEBPACK_IMPORTED_MODULE_111__platform_platform__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return __WEBPACK_IMPORTED_MODULE_111__platform_platform__["a"]; });
 /* unused harmony reexport setupPlatform */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_112__tap_click_haptic__ = __webpack_require__(36);
 /* unused harmony reexport Haptic */
@@ -44793,9 +44793,9 @@ var HomePage = (function () {
 }());
 HomePage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"C:\Users\c111807\Downloads\controlle\src\pages\home\home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button icon-only menuToggle>\n      <ion-icon name=\'menu\' class=\'menu_toogle\'></ion-icon>\n    </button>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding class=\'content\'>\n  <ion-card>\n    <ion-card-header>\n      <div class=\'saldo\'><div class=\'saldo_cifrao\'>R$</div><div class=\'saldo_valor\'>3.051,00</div></div>\n      <div class=\'saldo_geral_text\'>saldo geral</div>\n    </ion-card-header>\n    <ion-card-content>\n      <ion-list>\n        <ion-item>\n          <div class=\'periodo\'>20/05 - 19/06</div>\n          <div class=\'resumo\'><div class=\'cardcredit_detail\'>Receita:</div><div class=\'resultado receita\'>R$ 3.051,00</div></div>\n          <div class=\'resumo\'><div class=\'cardcredit_detail\'>Despesa:</div><div class=\'resultado despesa\'>R$ -2.587,00</div></div>\n          <div class=\'resumo\'><div class=\'cardcredit_detail\'>Resultado:</div><div class=\'resultado receita\'>R$ 464,00</div></div>\n        </ion-item>\n      </ion-list>\n    </ion-card-content>\n  </ion-card>\n\n  <ion-card>\n    <ion-card-header>\n      <span class=\'cardheader\'>Contas</span>\n    </ion-card-header>\n    <ion-card-content>\n      <ion-list>\n        <button ion-item>\n          <ion-avatar item-left>\n            <img src="./assets/img/card-logo-amex.svg">\n          </ion-avatar>\n          <div class=\'cardcredit\'>Caixa</div>\n          <div class=\'cardcredit_detail\'>Conta corrente</div>\n          <div class=\'conta\'>R$ 3051,00</div>\n        </button>\n      </ion-list>\n    </ion-card-content>\n  </ion-card>\n\n  <ion-card>\n    <ion-card-header>\n      <span class=\'cardheader\'>Cartões de créditos</span>\n    </ion-card-header>\n    <ion-card-content>\n      <ion-list>\n        <button ion-item>\n          <ion-avatar item-left>\n            <img src="./assets/img/card-logo-visa.svg">\n          </ion-avatar>\n          <div class=\'cardcredit\'>Santander Plantinum</div>\n          <div class=\'cardcredit_detail\'>Fatura<span class=\'cardcredit_number_fatura\'>R$ -600,00</span></div>\n          <div class=\'cardcredit_detail\'>Limite<span class=\'cardcredit_number_limite\'>R$ 600,00</span></div>\n        </button>\n      </ion-list>\n      <ion-list>\n        <button ion-item>\n          <ion-avatar item-left>\n            <img src="./assets/img/card-logo-mastercard.svg">\n          </ion-avatar>\n          <div class=\'cardcredit\'>Santander Plantinum</div>\n          <div class=\'cardcredit_detail\'>Fatura<span class=\'cardcredit_number_fatura\'>R$ -600,00</span></div>\n          <div class=\'cardcredit_detail\'>Limite<span class=\'cardcredit_number_limite\'>R$ 600,00</span></div>\n        </button>\n      </ion-list>\n    </ion-card-content>\n  </ion-card>\n\n  <ion-card>\n    <ion-card-header>\n      <span class=\'cardheader\'>Alertas da semana</span>\n    </ion-card-header>\n    <ion-card-content>\n      <div class=\'alerta_semana\'>\n        <div class=\'style_alerta_semana\'>\n          <div class=\'style_alerta_semana_flex\'><div class=\'style_alerta_semana_numero verde\'>0</div></div>\n          <div class=\'style_alerta_semana_flex\'>contas a receber</div>\n        </div>\n        <div class=\'style_alerta_semana\'>\n          <div class=\'style_alerta_semana_flex\'><div class=\'style_alerta_semana_numero\'>2</div></div>\n          <div class=\'style_alerta_semana_flex\'><div class=\'alerta_semana_detalhe\'>contas a pagar</div></div>\n        </div>\n        <div>\n          <div class=\'style_alerta_semana_flex\'><div class=\'style_alerta_semana_numero\'>3</div></div>\n          <div class=\'style_alerta_semana_flex\'><div class=\'alerta_semana_detalhe\'>contas atrasadas</div></div>\n        </div>\n      </div>\n      <div class=\'style_alerta_semana_flex\'>\n        <div class=\'btn_resolver\'>\n          <button ion-button round small color="light">resolver</button>\n        </div>\n      </div>\n    </ion-card-content>\n  </ion-card>\n  <ion-fab right bottom #fab>\n    <button ion-fab color="danger"><ion-icon ios="logo-usd" md="logo-usd"></ion-icon></button>\n    <ion-fab-list side="top">\n      <button ion-fab color="danger" (click)="teclado(\'despesa\', fab)" ><ion-icon ios="ios-cash" md="md-cash"></ion-icon></button>\n      <button ion-fab color="secondary" (click)="teclado(\'receita\', fab)"><ion-icon ios="ios-cash" md="md-cash"></ion-icon></button>\n      <button ion-fab color="gray" (click)="teclado(\'transferencia\', fab)"><ion-icon ios="ios-redo" md="md-redo"></ion-icon></button>\n    </ion-fab-list>\n  </ion-fab>\n</ion-content>\n'/*ion-inline-end:"C:\Users\c111807\Downloads\controlle\src\pages\home\home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"/home/rafael/github/controlle/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button icon-only menuToggle>\n      <ion-icon name=\'menu\' class=\'menu_toogle\'></ion-icon>\n    </button>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding class=\'content\'>\n  <ion-card>\n    <ion-card-header>\n      <div class=\'saldo\'><div class=\'saldo_cifrao\'>R$</div><div class=\'saldo_valor\'>3.051,00</div></div>\n      <div class=\'saldo_geral_text\'>saldo geral</div>\n    </ion-card-header>\n    <ion-card-content>\n      <ion-list>\n        <ion-item>\n          <div class=\'periodo\'>20/05 - 19/06</div>\n          <div class=\'resumo\'><div class=\'cardcredit_detail\'>Receita:</div><div class=\'resultado receita\'>R$ 3.051,00</div></div>\n          <div class=\'resumo\'><div class=\'cardcredit_detail\'>Despesa:</div><div class=\'resultado despesa\'>R$ -2.587,00</div></div>\n          <div class=\'resumo\'><div class=\'cardcredit_detail\'>Resultado:</div><div class=\'resultado receita\'>R$ 464,00</div></div>\n        </ion-item>\n      </ion-list>\n    </ion-card-content>\n  </ion-card>\n\n  <ion-card>\n    <ion-card-header>\n      <span class=\'cardheader\'>Contas</span>\n    </ion-card-header>\n    <ion-card-content>\n      <ion-list>\n        <button ion-item>\n          <ion-avatar item-left>\n            <img src="./assets/img/card-logo-amex.svg">\n          </ion-avatar>\n          <div class=\'cardcredit\'>Caixa</div>\n          <div class=\'cardcredit_detail\'>Conta corrente</div>\n          <div class=\'conta\'>R$ 3051,00</div>\n        </button>\n      </ion-list>\n    </ion-card-content>\n  </ion-card>\n\n  <ion-card>\n    <ion-card-header>\n      <span class=\'cardheader\'>Cartões de créditos</span>\n    </ion-card-header>\n    <ion-card-content>\n      <ion-list>\n        <button ion-item>\n          <ion-avatar item-left>\n            <img src="./assets/img/card-logo-visa.svg">\n          </ion-avatar>\n          <div class=\'cardcredit\'>Santander Plantinum</div>\n          <div class=\'cardcredit_detail\'>Fatura<span class=\'cardcredit_number_fatura\'>R$ -600,00</span></div>\n          <div class=\'cardcredit_detail\'>Limite<span class=\'cardcredit_number_limite\'>R$ 600,00</span></div>\n        </button>\n      </ion-list>\n      <ion-list>\n        <button ion-item>\n          <ion-avatar item-left>\n            <img src="./assets/img/card-logo-mastercard.svg">\n          </ion-avatar>\n          <div class=\'cardcredit\'>Santander Plantinum</div>\n          <div class=\'cardcredit_detail\'>Fatura<span class=\'cardcredit_number_fatura\'>R$ -600,00</span></div>\n          <div class=\'cardcredit_detail\'>Limite<span class=\'cardcredit_number_limite\'>R$ 600,00</span></div>\n        </button>\n      </ion-list>\n    </ion-card-content>\n  </ion-card>\n\n  <ion-card>\n    <ion-card-header>\n      <span class=\'cardheader\'>Alertas da semana</span>\n    </ion-card-header>\n    <ion-card-content>\n      <div class=\'alerta_semana\'>\n        <div class=\'style_alerta_semana\'>\n          <div class=\'style_alerta_semana_flex\'><div class=\'style_alerta_semana_numero verde\'>0</div></div>\n          <div class=\'style_alerta_semana_flex\'>contas a receber</div>\n        </div>\n        <div class=\'style_alerta_semana\'>\n          <div class=\'style_alerta_semana_flex\'><div class=\'style_alerta_semana_numero\'>2</div></div>\n          <div class=\'style_alerta_semana_flex\'><div class=\'alerta_semana_detalhe\'>contas a pagar</div></div>\n        </div>\n        <div>\n          <div class=\'style_alerta_semana_flex\'><div class=\'style_alerta_semana_numero\'>3</div></div>\n          <div class=\'style_alerta_semana_flex\'><div class=\'alerta_semana_detalhe\'>contas atrasadas</div></div>\n        </div>\n      </div>\n      <div class=\'style_alerta_semana_flex\'>\n        <div class=\'btn_resolver\'>\n          <button ion-button round small color="light">resolver</button>\n        </div>\n      </div>\n    </ion-card-content>\n  </ion-card>\n  <ion-fab right bottom #fab>\n    <button ion-fab color="danger"><ion-icon ios="logo-usd" md="logo-usd"></ion-icon></button>\n    <ion-fab-list side="top">\n      <button ion-fab color="danger" (click)="teclado(\'despesa\', fab)" ><ion-icon ios="ios-cash" md="md-cash"></ion-icon></button>\n      <button ion-fab color="secondary" (click)="teclado(\'receita\', fab)"><ion-icon ios="ios-cash" md="md-cash"></ion-icon></button>\n      <button ion-fab color="gray" (click)="teclado(\'transferencia\', fab)"><ion-icon ios="ios-redo" md="md-redo"></ion-icon></button>\n    </ion-fab-list>\n  </ion-fab>\n</ion-content>\n'/*ion-inline-end:"/home/rafael/github/controlle/src/pages/home/home.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* MenuController */]])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* MenuController */]])
 ], HomePage);
 
 //# sourceMappingURL=home.js.map
@@ -55790,7 +55790,7 @@ var CategoriaModalPage = (function () {
 }());
 CategoriaModalPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-categoria-modal',template:/*ion-inline-start:"C:\Users\c111807\Downloads\controlle\src\pages\categoria-modal\categoria-modal.html"*/'<ion-header>\n\n  <ion-navbar\n\n    [ngClass]="{\'despesa\':\'red\',\'receita\':\'green\',\'transferencia\':\'gray\'}[_tipo]"\n\n  > \n\n  <ion-buttons start>\n\n      <button ion-button (click)="sair()">\n\n        <span ion-text color="white" showWhen="ios">Cancel</span>\n\n        <ion-icon name="md-close" showWhen="android, windows"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\c111807\Downloads\controlle\src\pages\categoria-modal\categoria-modal.html"*/,
+        selector: 'page-categoria-modal',template:/*ion-inline-start:"/home/rafael/github/controlle/src/pages/categoria-modal/categoria-modal.html"*/'<ion-header>\n  <ion-navbar\n    [ngClass]="{\'despesa\':\'red\',\'receita\':\'green\',\'transferencia\':\'gray\'}[_tipo]"\n  > \n  <ion-buttons start>\n      <button ion-button (click)="sair()">\n        <span ion-text color="white" showWhen="ios">Cancel</span>\n        <ion-icon name="md-close" showWhen="android, windows"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/home/rafael/github/controlle/src/pages/categoria-modal/categoria-modal.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* ViewController */]])
 ], CategoriaModalPage);
@@ -55804,49 +55804,8 @@ CategoriaModalPage = __decorate([
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContaModalPage; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var ContaModalPage = (function () {
-    function ContaModalPage(navCtrl, navParams, viewCtrl) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.viewCtrl = viewCtrl;
-        this._tipo = navParams.get('tipo');
-        console.log(this._tipo);
-    }
-    ContaModalPage.prototype.sair = function () {
-        this.viewCtrl.dismiss();
-    };
-    return ContaModalPage;
-}());
-ContaModalPage = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-conta-modal',template:/*ion-inline-start:"C:\Users\c111807\Downloads\controlle\src\pages\conta-modal\conta-modal.html"*/'<ion-header>\n\n  <ion-navbar\n\n    [ngClass]="{\'despesa\':\'red\',\'receita\':\'green\',\'transferencia\':\'gray\'}[_tipo]"\n\n  > \n\n  <ion-buttons start>\n\n      <button ion-button (click)="sair()">\n\n        <span ion-text color="white" showWhen="ios">Cancel</span>\n\n        <ion-icon name="md-close" showWhen="android, windows"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\c111807\Downloads\controlle\src\pages\conta-modal\conta-modal.html"*/,
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* ViewController */]])
-], ContaModalPage);
-
-//# sourceMappingURL=conta-modal.js.map
-
-/***/ }),
-/* 102 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__categoria_modal_categoria_modal__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__conta_modal_conta_modal__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__repetir_modal_repetir_modal__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__home_home__ = __webpack_require__(47);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LancamentoPage; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -55871,6 +55830,7 @@ var LancamentoPage = (function () {
         this.modalCtrl = modalCtrl;
         this.valor = '';
         this.selectFatura = false;
+        this.observacao = false;
         this.valor = navParams.get('valor');
         this.tipo = navParams.get('tipo');
         this.data = new Date().toISOString();
@@ -55879,8 +55839,8 @@ var LancamentoPage = (function () {
         var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_2__categoria_modal_categoria_modal__["a" /* CategoriaModalPage */], tipo);
         modal.present();
     };
-    LancamentoPage.prototype.abrirModalConta = function (tipo) {
-        var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_3__conta_modal_conta_modal__["a" /* ContaModalPage */], tipo);
+    LancamentoPage.prototype.abrirModalRepetir = function (tipo) {
+        var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_3__repetir_modal_repetir_modal__["a" /* RepetirModalPage */], { tipo: tipo });
         modal.present();
     };
     LancamentoPage.prototype.fatura = function (event) {
@@ -55891,19 +55851,127 @@ var LancamentoPage = (function () {
     LancamentoPage.prototype.sair = function () {
         this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_4__home_home__["a" /* HomePage */]);
     };
+    LancamentoPage.prototype.campoObservacao = function (status) {
+        this.observacao = status;
+    };
     return LancamentoPage;
 }());
 LancamentoPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-lancamento',template:/*ion-inline-start:"C:\Users\c111807\Downloads\controlle\src\pages\lancamento\lancamento.html"*/'<ion-header>\n  <ion-navbar hideBackButton="true"\n    [ngClass]="{\'despesa\':\'red\',\'receita\':\'green\',\'transferencia\':\'gray\'}[tipo]"\n  >\n    <ion-buttons start>\n      <button ion-button (click)="sair()">\n        <span ion-text color="white" showWhen="ios">Cancel</span>\n        <ion-icon name="md-close" showWhen="android, windows"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n<ion-content class="grid-basic-page">\n    <div class=\'teclado estrutura_input\'>\n        <div class=\'cifrao\'\n            [ngClass]="{\'despesa\':\'cor-vermelha\',\'receita\':\'cor-verde\',\'transferencia\':\'cor-cinza\'}[tipo]"\n        >R$</div>\n        <span class=\'tamanho\'\n            [ngClass]="{\'despesa\':\'cor-vermelha\',\'receita\':\'cor-verde\',\'transferencia\':\'cor-cinza\'}[tipo]"\n        >{{ valor | numerobrasil }}</span>\n    </div>\n    <ion-list>\n        <ion-item>\n            <ion-label floating class=\'cor-label\'>Data</ion-label>\n            <ion-datetime  displayFormat="MM/DD/YY" [(ngModel)]="data"></ion-datetime>\n        </ion-item>\n\n        <!--div>\n            <button ion-button color="light" small (click)=\'abrirModalCategoria({tipo:tipo})\' clear>Light Clear</button>\n        </div-->\n        <ion-item>\n            <ion-label floating class=\'cor-label\'>Categoria</ion-label>\n            <ion-select [(ngModel)]="categoria">\n                <ion-option value="alimentacao">Alimentação</ion-option>\n                <ion-option value="cartao">Cartão</ion-option>\n                <ion-option value="educacao">Educação</ion-option>\n                <ion-option value="cultura">>> Cultura</ion-option>\n                <ion-option value="lazer">Lazer</ion-option>\n                <ion-option value="moradoa">Moradia</ion-option>\n                <ion-option value="eletronico">>> Eletronico</ion-option>\n                <ion-option value="hotel">>> Hotel</ion-option>\n                <ion-option value="outros">Outros</ion-option>\n                <ion-option value="salario">Salário</ion-option>\n                <ion-option value="saude">Saúde</ion-option>\n                <ion-option value="cosmeticos">>> Cosméticos</ion-option>\n                <ion-option value="drogaria">>> Drogaria</ion-option>\n                <ion-option value="telefonia">Telefonia</ion-option>\n                <ion-option value="transporte">Transporte</ion-option>\n                <ion-option value="vestuario">Vestuário</ion-option>\n            </ion-select>\n        </ion-item>\n\n        <ion-item>\n            <ion-label floating class=\'cor-label\'>Conta/Cartão</ion-label>\n            <ion-select [(ngModel)]="cartao" (ngModelChange)="fatura($event)">\n                <ion-option value="alimentacao">Caixa</ion-option>\n                <ion-option value="cartao-1">Platinum Caixa Visa</ion-option>\n                <ion-option value="cartao-2">Santander FIT Mastercard</ion-option>\n                <ion-option value="cartao-3">Santander FREE Visa</ion-option>\n            </ion-select>\n        </ion-item>\n        <ion-item *ngIf="selectFatura">\n            <ion-label stacked class=\'cor-label\'>Lançado na fatura de</ion-label>\n            <ion-select [(ngModel)]="mesFatura">\n                <ion-option value="fatura-3">Março de 2017</ion-option>\n                <ion-option value="fatura-4">Abril de 2017</ion-option>\n                <ion-option value="fatura-5">Maio de 2017</ion-option>\n                <ion-option value="fatura-6">Junho de 2017</ion-option>\n                <ion-option value="fatura-7">Julho de 2017</ion-option>\n                <ion-option value="fatura-8">Agosto de 2017</ion-option>\n                <ion-option value="fatura-9">Setembro de 2017</ion-option>\n            </ion-select>\n        </ion-item>\n        <ion-item>\n            <ion-label floating class=\'cor-label\'>Descrição</ion-label>\n            <ion-input type="text"></ion-input>\n        </ion-item>\n    </ion-list>\n    <ion-fab center bottom>\n        <button ion-fab\n            [color]= "{\'despesa\':\'danger\',\'receita\':\'secondary\',\'transferencia\':\'gray\'}[tipo]"\n        ><ion-icon ios="ios-checkmark" md="md-checkmark"></ion-icon></button>\n    </ion-fab>\n</ion-content>\n\n\n\n\n'/*ion-inline-end:"C:\Users\c111807\Downloads\controlle\src\pages\lancamento\lancamento.html"*/
+        selector: 'page-lancamento',template:/*ion-inline-start:"/home/rafael/github/controlle/src/pages/lancamento/lancamento.html"*/'<ion-header>\n  <ion-navbar hideBackButton="true"\n    [ngClass]="{\'despesa\':\'red\',\'receita\':\'green\',\'transferencia\':\'gray\'}[tipo]"\n  >\n    <ion-buttons start>\n      <button ion-button (click)="sair()">\n        <span ion-text color="white" showWhen="ios">Cancel</span>\n        <ion-icon name="md-close" showWhen="android, windows"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n<ion-content class="grid-basic-page">\n    <div class=\'teclado estrutura_input\'>\n        <div class=\'cifrao\'\n            [ngClass]="{\'despesa\':\'cor-vermelha\',\'receita\':\'cor-verde\',\'transferencia\':\'cor-cinza\'}[tipo]"\n        >R$</div>\n        <span class=\'tamanho\'\n            [ngClass]="{\'despesa\':\'cor-vermelha\',\'receita\':\'cor-verde\',\'transferencia\':\'cor-cinza\'}[tipo]"\n        >{{ valor | numerobrasil }}</span>\n    </div>\n    <div>\n        <div class=\'teclado repetir\' (click)=\'abrirModalRepetir(tipo)\'\n            [ngClass]="{\'despesa\':\'cor-vermelha\',\'receita\':\'cor-verde\',\'transferencia\':\'cor-cinza\'}[tipo]"\n        >Repetir</div>\n    </div>\n    <ion-list>\n        <ion-item>\n            <ion-label floating class=\'cor-label\'>Data</ion-label>\n            <ion-datetime  displayFormat="MM/DD/YY" [(ngModel)]="data"></ion-datetime>\n        </ion-item>\n\n        <!--div>\n            <button ion-button color="light" small (click)=\'abrirModalCategoria({tipo:tipo})\' clear>Light Clear</button>\n        </div-->\n        <ion-item>\n            <ion-label floating class=\'cor-label\'>Categoria</ion-label>\n            <ion-select [(ngModel)]="categoria">\n                <ion-option value="alimentacao">Alimentação</ion-option>\n                <ion-option value="cartao">Cartão</ion-option>\n                <ion-option value="educacao">Educação</ion-option>\n                <ion-option value="cultura">>> Cultura</ion-option>\n                <ion-option value="lazer">Lazer</ion-option>\n                <ion-option value="moradoa">Moradia</ion-option>\n                <ion-option value="eletronico">>> Eletronico</ion-option>\n                <ion-option value="hotel">>> Hotel</ion-option>\n                <ion-option value="outros">Outros</ion-option>\n                <ion-option value="salario">Salário</ion-option>\n                <ion-option value="saude">Saúde</ion-option>\n                <ion-option value="cosmeticos">>> Cosméticos</ion-option>\n                <ion-option value="drogaria">>> Drogaria</ion-option>\n                <ion-option value="telefonia">Telefonia</ion-option>\n                <ion-option value="transporte">Transporte</ion-option>\n                <ion-option value="vestuario">Vestuário</ion-option>\n            </ion-select>\n        </ion-item>\n\n        <ion-item>\n            <ion-label floating class=\'cor-label\'>Conta/Cartão</ion-label>\n            <ion-select [(ngModel)]="cartao" (ngModelChange)="fatura($event)">\n                <ion-option value="alimentacao">Caixa</ion-option>\n                <ion-option value="cartao-1">Platinum Caixa Visa</ion-option>\n                <ion-option value="cartao-2">Santander FIT Mastercard</ion-option>\n                <ion-option value="cartao-3">Santander FREE Visa</ion-option>\n            </ion-select>\n        </ion-item>\n        <ion-item *ngIf="selectFatura">\n            <ion-label stacked class=\'cor-label\'>Lançado na fatura de</ion-label>\n            <ion-select [(ngModel)]="mesFatura">\n                <ion-option value="fatura-3">Março de 2017</ion-option>\n                <ion-option value="fatura-4">Abril de 2017</ion-option>\n                <ion-option value="fatura-5">Maio de 2017</ion-option>\n                <ion-option value="fatura-6">Junho de 2017</ion-option>\n                <ion-option value="fatura-7">Julho de 2017</ion-option>\n                <ion-option value="fatura-8">Agosto de 2017</ion-option>\n                <ion-option value="fatura-9">Setembro de 2017</ion-option>\n            </ion-select>\n        </ion-item>\n        <ion-item>\n            <ion-label floating class=\'cor-label\'>Descrição</ion-label>\n            <ion-input type="text"></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label floating class=\'cor-label\'>Observação</ion-label>\n            <ion-input type="text"></ion-input>\n        </ion-item>\n        \n    </ion-list>\n    <ion-fab center bottom>\n        <button ion-fab\n            [color]= "{\'despesa\':\'danger\',\'receita\':\'secondary\',\'transferencia\':\'gray\'}[tipo]"\n        ><ion-icon ios="ios-checkmark" md="md-checkmark"></ion-icon></button>\n    </ion-fab>\n</ion-content>\n\n\n\n\n'/*ion-inline-end:"/home/rafael/github/controlle/src/pages/lancamento/lancamento.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */],
         __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavParams */],
         __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* ViewController */],
-        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ModalController */]])
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ModalController */]])
 ], LancamentoPage);
 
 //# sourceMappingURL=lancamento.js.map
+
+/***/ }),
+/* 102 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RepetirModalPage; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var RepetirModalPage = (function () {
+    function RepetirModalPage(navCtrl, navParams, viewCtrl, alerCtrl) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.viewCtrl = viewCtrl;
+        this.alerCtrl = alerCtrl;
+        this.periodoFixo = false;
+        this._tipo = navParams.get('tipo');
+    }
+    RepetirModalPage.prototype.sair = function () {
+        this.viewCtrl.dismiss();
+    };
+    RepetirModalPage.prototype.fixoRadio = function () {
+        var _this = this;
+        var alert = this.alerCtrl.create();
+        alert.setTitle('Período');
+        alert.addInput({
+            type: 'radio',
+            label: 'Diária',
+            value: 'diaria'
+        });
+        alert.addInput({
+            type: 'radio',
+            label: 'Semanal',
+            value: 'semanal'
+        });
+        alert.addInput({
+            type: 'radio',
+            label: 'Quinzenal',
+            value: 'quinzenal'
+        });
+        alert.addInput({
+            type: 'radio',
+            label: 'Mensal',
+            value: 'mensal'
+        });
+        alert.addInput({
+            type: 'radio',
+            label: 'Bimestral',
+            value: 'bimestral'
+        });
+        alert.addInput({
+            type: 'radio',
+            label: 'Trimestral',
+            value: 'trimestral'
+        });
+        alert.addInput({
+            type: 'radio',
+            label: 'Semestral',
+            value: 'semestral'
+        });
+        alert.addInput({
+            type: 'radio',
+            label: 'Anual',
+            value: 'anual'
+        });
+        //alert.addButton('Cancel');
+        alert.addButton({
+            text: 'Ok',
+            handler: function (data) {
+                if (data == 'diaria') {
+                    _this.periodoEscolhido = 'Diária';
+                }
+                else {
+                    _this.periodoEscolhido = data.charAt(0).toUpperCase() + data.slice(1);
+                }
+                _this.testRadioOpen = false;
+                _this.periodoFixo = true;
+            }
+        });
+        alert.present().then(function () {
+            _this.testRadioOpen = true;
+        });
+    };
+    return RepetirModalPage;
+}());
+RepetirModalPage = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
+        selector: 'page-repetir-modal',template:/*ion-inline-start:"/home/rafael/github/controlle/src/pages/repetir-modal/repetir-modal.html"*/'<ion-header>\n  <ion-navbar\n    [ngClass]="{\'despesa\':\'red\',\'receita\':\'green\',\'transferencia\':\'gray\'}[_tipo]"\n  > \n  <ion-buttons start>\n      <button ion-button (click)="sair()">\n        <span ion-text color="white" showWhen="ios">Cancel</span>\n        <ion-icon name="md-close" showWhen="android, windows"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n  <ion-list radio-group [(ngModel)]="repetir">\n    <ion-item>\n      <ion-label>Fixo</ion-label>\n      <ion-radio value="fixo" (click)="fixoRadio()"></ion-radio>\n    </ion-item>\n    <ion-item>\n      <ion-label>Parcelado</ion-label>\n      <ion-radio value="parcelado"></ion-radio>\n    </ion-item>\n  </ion-list>\n\n  <ion-item>\n      <ion-label>{{ periodoEscolhido }}</ion-label>    \n  </ion-item>\n\n <!--ion-list radio-group [(ngModel)]="periodo-fixo" *ngIf="repetir==\'fixo\'">\n    <ion-list-header>\n      Período\n    </ion-list-header>\n    <ion-item>\n      <ion-label>Diária</ion-label>\n      <ion-radio value="diaria"></ion-radio>\n    </ion-item>\n    <ion-item>\n      <ion-label>Semanal</ion-label>\n      <ion-radio value="semanal"></ion-radio>\n    </ion-item>\n        <ion-item>\n      <ion-label>Quinzenal</ion-label>\n      <ion-radio value="quinzenal"></ion-radio>\n    </ion-item>\n    <ion-item>\n      <ion-label>Mensal</ion-label>\n      <ion-radio value="mensal"></ion-radio>\n    </ion-item>\n        <ion-item>\n      <ion-label>Bimestral</ion-label>\n      <ion-radio value="bimestral"></ion-radio>\n    </ion-item>\n    <ion-item>\n      <ion-label>Trimestral</ion-label>\n      <ion-radio value="trimestral"></ion-radio>\n    </ion-item>\n        <ion-item>\n      <ion-label>Semestral</ion-label>\n      <ion-radio value="semestral"></ion-radio>\n    </ion-item>\n    <ion-item>\n      <ion-label>Anual</ion-label>\n      <ion-radio value="anual"></ion-radio>\n    </ion-item>\n  </ion-list-->\n\n  <!--ion-content padding>\n  <ion-list radio-group [(ngModel)]="repetir">\n    <ion-item>\n      <ion-label>Fixo</ion-label>\n      <ion-radio value="fixo" (click)="fixoRadio()"></ion-radio>\n    </ion-item>\n    <ion-item>\n      <ion-label>Parcelado</ion-label>\n      <ion-radio value="parcelado"></ion-radio>\n    </ion-item>\n  </ion-list>\n\n  <ion-item-group *ngIf="periodoFixo">\n    <ion-item-divider color="light">Período</ion-item-divider>\n    <ion-item>{{ periodoEscolhido }}</ion-item>\n  </ion-item-group>\n</ion-content-->\n\n  <div *ngIf="repetir==\'parcelado\'">Parcelado</div>\n  <ion-item *ngIf="repetir==\'fixo\'">\n    <ion-select [(ngModel)]="periodo-fixo">\n        <ion-option value="diaria">Diária</ion-option>\n        <ion-option value="semanal">Semanal</ion-option>\n        <ion-option value="quinzenal">Quinzenal</ion-option>\n        <ion-option value="mensal">>> Mensal</ion-option>\n        <ion-option value="bimestral">Bimestral</ion-option>\n        <ion-option value="trimestral">Trimestral</ion-option>\n        <ion-option value="semestral">>> Semestral</ion-option>\n        <ion-option value="anual">>> Anual</ion-option>\n    </ion-select>\n  </ion-item>\n</ion-content>\n'/*ion-inline-end:"/home/rafael/github/controlle/src/pages/repetir-modal/repetir-modal.html"*/,
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* ViewController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* ViewController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* AlertController */]) === "function" && _d || Object])
+], RepetirModalPage);
+
+var _a, _b, _c, _d;
+//# sourceMappingURL=repetir-modal.js.map
 
 /***/ }),
 /* 103 */
@@ -55912,7 +55980,7 @@ LancamentoPage = __decorate([
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lancamento_lancamento__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lancamento_lancamento__ = __webpack_require__(101);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TecladoPage; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -55960,7 +56028,7 @@ var TecladoPage = (function () {
 }());
 TecladoPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-teclado',template:/*ion-inline-start:"C:\Users\c111807\Downloads\controlle\src\pages\teclado\teclado.html"*/'<ion-header>\n  <ion-navbar hideBackButton="true"\n    [ngClass]="{\'despesa\':\'red\',\'receita\':\'green\',\'transferencia\':\'gray\'}[tipo]"\n  >\n  <ion-title class="cor-branco">{{ cabecalho }}</ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content class="grid-basic-page">\n    <div class=\'teclado estrutura_input\'>\n        <div class=\'cifrao\'\n            [ngClass]="{\'despesa\':\'cor-vermelha\',\'receita\':\'cor-verde\',\'transferencia\':\'cor-cinza\'}[tipo]"\n        >R$</div>\n        <span class=\'tamanho\'\n            [ngClass]="{\'despesa\':\'cor-vermelha\',\'receita\':\'cor-verde\',\'transferencia\':\'cor-cinza\'}[tipo]"\n        >{{ valor | numerobrasil }}</span>\n    </div>\n    <ion-grid class=\'keyboard\'>\n        <ion-row>\n            <ion-col col-4>\n                <div><button ion-button round clear\n                [color]= "{\'despesa\':\'danger\',\'receita\':\'secondary\',\'transferencia\':\'gray\'}[tipo]"\n            class=\'size_teclado\'\n                (click)="adicionarNaLista(\'1\')">1</button></div>\n            </ion-col>\n            <ion-col col-4>\n                <div><button ion-button round clear\n                [color]= "{\'despesa\':\'danger\',\'receita\':\'secondary\',\'transferencia\':\'gray\'}[tipo]"\n                class=\'size_teclado\'\n                (click)="adicionarNaLista(\'2\')">2</button></div>\n            </ion-col>\n            <ion-col col-4>\n                <div><button ion-button round clear\n                [color]= "{\'despesa\':\'danger\',\'receita\':\'secondary\',\'transferencia\':\'gray\'}[tipo]"\n                class=\'size_teclado\'\n                (click)="adicionarNaLista(\'3\')">3</button></div>\n            </ion-col>\n        </ion-row>\n        <ion-row>\n            <ion-col col-4>\n                <div><button ion-button round clear\n                [color]= "{\'despesa\':\'danger\',\'receita\':\'secondary\',\'transferencia\':\'gray\'}[tipo]"\n                class=\'size_teclado\'\n                (click)="adicionarNaLista(\'4\')">4</button></div>\n            </ion-col>\n            <ion-col col-4>\n                <div><button ion-button round clear\n                [color]= "{\'despesa\':\'danger\',\'receita\':\'secondary\',\'transferencia\':\'gray\'}[tipo]"\n                class=\'size_teclado\'\n                (click)="adicionarNaLista(\'5\')">5</button></div>\n            </ion-col>\n            <ion-col col-4>\n                <div><button ion-button round clear\n                [color]= "{\'despesa\':\'danger\',\'receita\':\'secondary\',\'transferencia\':\'gray\'}[tipo]"\n                class=\'size_teclado\'\n                (click)="adicionarNaLista(\'6\')">6</button></div>\n            </ion-col>\n        </ion-row>\n        <ion-row>\n            <ion-col col-4>\n                <div><button ion-button round clear\n                [color]= "{\'despesa\':\'danger\',\'receita\':\'secondary\',\'transferencia\':\'gray\'}[tipo]"\n                class=\'size_teclado\'\n                (click)="adicionarNaLista(\'7\')">7</button></div>\n            </ion-col>\n            <ion-col col-4>\n                <div><button ion-button round clear\n                [color]= "{\'despesa\':\'danger\',\'receita\':\'secondary\',\'transferencia\':\'gray\'}[tipo]"\n                class=\'size_teclado\'\n                (click)="adicionarNaLista(\'8\')">8</button></div>\n            </ion-col>\n            <ion-col col-4>\n                <div><button ion-button round clear\n                [color]= "{\'despesa\':\'danger\',\'receita\':\'secondary\',\'transferencia\':\'gray\'}[tipo]"\n                class=\'size_teclado\'\n                (click)="adicionarNaLista(\'9\')">9</button></div>\n            </ion-col>\n        </ion-row>\n        <ion-row>\n            <ion-col col-4>\n                <div><button ion-button round clear color="light" class=\'size_teclado\'></button></div>\n            </ion-col>\n            <ion-col col-4>\n                <div><button ion-button round clear\n                [color]= "{\'despesa\':\'danger\',\'receita\':\'secondary\',\'transferencia\':\'gray\'}[tipo]"\n                class=\'size_teclado\'\n                (click)="adicionarNaLista(\'0\')">0</button></div>\n            </ion-col>\n            <ion-col col-4>\n                <div>\n                    <button ion-button\n                        [color]= "{\'despesa\':\'danger\',\'receita\':\'secondary\',\'transferencia\':\'gray\'}[tipo]"\n                        clear icon-only style="width: 70px;" (click)=\'removerDaLista()\'>\n                        <ion-icon ios="ios-backspace" md="md-backspace" is-active="false"></ion-icon>\n                    </button>\n                </div>\n            </ion-col>\n        </ion-row>\n    </ion-grid>\n    <ion-fab center bottom>\n        <button ion-fab (click)=\'registarLancamento(tipo, valor)\'\n            [color]= "{\'despesa\':\'danger\',\'receita\':\'secondary\',\'transferencia\':\'gray\'}[tipo]"\n        ><ion-icon ios="ios-checkmark" md="md-checkmark"></ion-icon></button>\n    </ion-fab>\n</ion-content>\n\n\n\n\n'/*ion-inline-end:"C:\Users\c111807\Downloads\controlle\src\pages\teclado\teclado.html"*/,
+        selector: 'page-teclado',template:/*ion-inline-start:"/home/rafael/github/controlle/src/pages/teclado/teclado.html"*/'<ion-header>\n  <ion-navbar hideBackButton="true"\n    [ngClass]="{\'despesa\':\'red\',\'receita\':\'green\',\'transferencia\':\'gray\'}[tipo]"\n  >\n  <ion-title class="cor-branco">{{ cabecalho }}</ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content class="grid-basic-page">\n    <div class=\'teclado estrutura_input\'>\n        <div class=\'cifrao\'\n            [ngClass]="{\'despesa\':\'cor-vermelha\',\'receita\':\'cor-verde\',\'transferencia\':\'cor-cinza\'}[tipo]"\n        >R$</div>\n        <span class=\'tamanho\'\n            [ngClass]="{\'despesa\':\'cor-vermelha\',\'receita\':\'cor-verde\',\'transferencia\':\'cor-cinza\'}[tipo]"\n        >{{ valor | numerobrasil }}</span>\n    </div>\n    <ion-grid class=\'keyboard\'>\n        <ion-row>\n            <ion-col col-4>\n                <div><button ion-button round clear\n                [color]= "{\'despesa\':\'danger\',\'receita\':\'secondary\',\'transferencia\':\'gray\'}[tipo]"\n            class=\'size_teclado\'\n                (click)="adicionarNaLista(\'1\')">1</button></div>\n            </ion-col>\n            <ion-col col-4>\n                <div><button ion-button round clear\n                [color]= "{\'despesa\':\'danger\',\'receita\':\'secondary\',\'transferencia\':\'gray\'}[tipo]"\n                class=\'size_teclado\'\n                (click)="adicionarNaLista(\'2\')">2</button></div>\n            </ion-col>\n            <ion-col col-4>\n                <div><button ion-button round clear\n                [color]= "{\'despesa\':\'danger\',\'receita\':\'secondary\',\'transferencia\':\'gray\'}[tipo]"\n                class=\'size_teclado\'\n                (click)="adicionarNaLista(\'3\')">3</button></div>\n            </ion-col>\n        </ion-row>\n        <ion-row>\n            <ion-col col-4>\n                <div><button ion-button round clear\n                [color]= "{\'despesa\':\'danger\',\'receita\':\'secondary\',\'transferencia\':\'gray\'}[tipo]"\n                class=\'size_teclado\'\n                (click)="adicionarNaLista(\'4\')">4</button></div>\n            </ion-col>\n            <ion-col col-4>\n                <div><button ion-button round clear\n                [color]= "{\'despesa\':\'danger\',\'receita\':\'secondary\',\'transferencia\':\'gray\'}[tipo]"\n                class=\'size_teclado\'\n                (click)="adicionarNaLista(\'5\')">5</button></div>\n            </ion-col>\n            <ion-col col-4>\n                <div><button ion-button round clear\n                [color]= "{\'despesa\':\'danger\',\'receita\':\'secondary\',\'transferencia\':\'gray\'}[tipo]"\n                class=\'size_teclado\'\n                (click)="adicionarNaLista(\'6\')">6</button></div>\n            </ion-col>\n        </ion-row>\n        <ion-row>\n            <ion-col col-4>\n                <div><button ion-button round clear\n                [color]= "{\'despesa\':\'danger\',\'receita\':\'secondary\',\'transferencia\':\'gray\'}[tipo]"\n                class=\'size_teclado\'\n                (click)="adicionarNaLista(\'7\')">7</button></div>\n            </ion-col>\n            <ion-col col-4>\n                <div><button ion-button round clear\n                [color]= "{\'despesa\':\'danger\',\'receita\':\'secondary\',\'transferencia\':\'gray\'}[tipo]"\n                class=\'size_teclado\'\n                (click)="adicionarNaLista(\'8\')">8</button></div>\n            </ion-col>\n            <ion-col col-4>\n                <div><button ion-button round clear\n                [color]= "{\'despesa\':\'danger\',\'receita\':\'secondary\',\'transferencia\':\'gray\'}[tipo]"\n                class=\'size_teclado\'\n                (click)="adicionarNaLista(\'9\')">9</button></div>\n            </ion-col>\n        </ion-row>\n        <ion-row>\n            <ion-col col-4>\n                <div><button ion-button round clear color="light" class=\'size_teclado\'></button></div>\n            </ion-col>\n            <ion-col col-4>\n                <div><button ion-button round clear\n                [color]= "{\'despesa\':\'danger\',\'receita\':\'secondary\',\'transferencia\':\'gray\'}[tipo]"\n                class=\'size_teclado\'\n                (click)="adicionarNaLista(\'0\')">0</button></div>\n            </ion-col>\n            <ion-col col-4>\n                <div>\n                    <button ion-button\n                        [color]= "{\'despesa\':\'danger\',\'receita\':\'secondary\',\'transferencia\':\'gray\'}[tipo]"\n                        clear icon-only style="width: 70px;" (click)=\'removerDaLista()\'>\n                        <ion-icon ios="ios-backspace" md="md-backspace" is-active="false"></ion-icon>\n                    </button>\n                </div>\n            </ion-col>\n        </ion-row>\n    </ion-grid>\n    <ion-fab center bottom>\n        <button ion-fab (click)=\'registarLancamento(tipo, valor)\'\n            [color]= "{\'despesa\':\'danger\',\'receita\':\'secondary\',\'transferencia\':\'gray\'}[tipo]"\n        ><ion-icon ios="ios-checkmark" md="md-checkmark"></ion-icon></button>\n    </ion-fab>\n</ion-content>\n\n\n\n\n'/*ion-inline-end:"/home/rafael/github/controlle/src/pages/teclado/teclado.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavParams */]])
 ], TecladoPage);
@@ -74611,9 +74679,9 @@ webpackEmptyContext.id = 197;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_home_home__ = __webpack_require__(47);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_teclado_teclado__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_teclado_teclado_pipe__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_lancamento_lancamento__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_lancamento_lancamento__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_categoria_modal_categoria_modal__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_conta_modal_conta_modal__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_repetir_modal_repetir_modal__ = __webpack_require__(102);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -74649,7 +74717,7 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_10__pages_teclado_teclado_pipe__["a" /* NumberBrasil */],
             __WEBPACK_IMPORTED_MODULE_11__pages_lancamento_lancamento__["a" /* LancamentoPage */],
             __WEBPACK_IMPORTED_MODULE_12__pages_categoria_modal_categoria_modal__["a" /* CategoriaModalPage */],
-            __WEBPACK_IMPORTED_MODULE_13__pages_conta_modal_conta_modal__["a" /* ContaModalPage */],
+            __WEBPACK_IMPORTED_MODULE_13__pages_repetir_modal_repetir_modal__["a" /* RepetirModalPage */],
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -74662,7 +74730,7 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_9__pages_teclado_teclado__["a" /* TecladoPage */],
             __WEBPACK_IMPORTED_MODULE_11__pages_lancamento_lancamento__["a" /* LancamentoPage */],
             __WEBPACK_IMPORTED_MODULE_12__pages_categoria_modal_categoria_modal__["a" /* CategoriaModalPage */],
-            __WEBPACK_IMPORTED_MODULE_13__pages_conta_modal_conta_modal__["a" /* ContaModalPage */],
+            __WEBPACK_IMPORTED_MODULE_13__pages_repetir_modal_repetir_modal__["a" /* RepetirModalPage */],
         ],
         providers: [
             __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__["a" /* StatusBar */],
@@ -74898,9 +74966,9 @@ var MyApp = (function () {
     return MyApp;
 }());
 MyApp = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({template:/*ion-inline-start:"C:\Users\c111807\Downloads\controlle\src\app\app.html"*/'<ion-menu [content]="content">\n\n  <ion-header>\n\n    <ion-toolbar>\n\n      <ion-title>Menu</ion-title>\n\n    </ion-toolbar>\n\n  </ion-header>\n\n  <ion-content>\n\n    <ion-list>\n\n      <button ion-item (click)="openPage(homePage)">\n\n        Home\n\n      </button>\n\n      <button ion-item (click)="openPage(friendsPage)">\n\n        Friends\n\n      </button>\n\n      <button ion-item (click)="openPage(eventsPage)">\n\n        Events\n\n      </button>\n\n      <button ion-item (click)="closeMenu()">\n\n        Close Menu\n\n      </button>\n\n    </ion-list>\n\n  </ion-content>\n\n</ion-menu>\n\n\n\n<ion-nav id="nav" #content [root]="rootPage"></ion-nav>'/*ion-inline-end:"C:\Users\c111807\Downloads\controlle\src\app\app.html"*/
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({template:/*ion-inline-start:"/home/rafael/github/controlle/src/app/app.html"*/'<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n  <ion-content>\n    <ion-list>\n      <button ion-item (click)="openPage(homePage)">\n        Home\n      </button>\n      <button ion-item (click)="openPage(friendsPage)">\n        Friends\n      </button>\n      <button ion-item (click)="openPage(eventsPage)">\n        Events\n      </button>\n      <button ion-item (click)="closeMenu()">\n        Close Menu\n      </button>\n    </ion-list>\n  </ion-content>\n</ion-menu>\n\n<ion-nav id="nav" #content [root]="rootPage"></ion-nav>'/*ion-inline-end:"/home/rafael/github/controlle/src/app/app.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
 ], MyApp);
 
 //# sourceMappingURL=app.component.js.map

@@ -32332,33 +32332,6 @@ page-categoria-modal .bar-button-default-wp, page-categoria-modal .bar-button-cl
   color: #fff;
 }
 
-page-conta-modal ion-navbar.red div.toolbar-background {
-  border-color: #F44336;
-  background: #F44336;
-}
-
-page-conta-modal ion-navbar.green div.toolbar-background {
-  border-color: #4CAF50;
-  background: #4CAF50;
-}
-
-page-conta-modal ion-navbar.gray div.toolbar-background {
-  border-color: #9E9E9E;
-  background: #9E9E9E;
-}
-
-page-conta-modal .bar-button-default-md, page-conta-modal .bar-button-clear-md-default, page-conta-modal .bar-button-md-default {
-  color: #fff;
-}
-
-page-conta-modal .bar-button-default-ios, page-conta-modal .bar-button-default.bar-button-ios-default, page-conta-modal .bar-button-clear-ios-default {
-  color: #fff;
-}
-
-page-conta-modal .bar-button-default-wp, page-conta-modal .bar-button-clear-wp-default, page-conta-modal .bar-button-wp-default {
-  color: #fff;
-}
-
 page-home .content {
   background-color: #f5f5f5;
 }
@@ -32574,6 +32547,21 @@ page-lancamento .estrutura_input {
   height: 54px;
 }
 
+page-lancamento .repetir {
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 page-lancamento .cor-vermelha {
   color: #F44336;
 }
@@ -32606,6 +32594,33 @@ page-lancamento .grid-basic-page ion-col div {
 
 page-lancamento div button .button-inner {
   font-size: 40px;
+}
+
+page-repetir-modal ion-navbar.red div.toolbar-background {
+  border-color: #F44336;
+  background: #F44336;
+}
+
+page-repetir-modal ion-navbar.green div.toolbar-background {
+  border-color: #4CAF50;
+  background: #4CAF50;
+}
+
+page-repetir-modal ion-navbar.gray div.toolbar-background {
+  border-color: #9E9E9E;
+  background: #9E9E9E;
+}
+
+page-repetir-modal .bar-button-default-md, page-repetir-modal .bar-button-clear-md-default, page-repetir-modal .bar-button-md-default {
+  color: #fff;
+}
+
+page-repetir-modal .bar-button-default-ios, page-repetir-modal .bar-button-default.bar-button-ios-default, page-repetir-modal .bar-button-clear-ios-default {
+  color: #fff;
+}
+
+page-repetir-modal .bar-button-default-wp, page-repetir-modal .bar-button-clear-wp-default, page-repetir-modal .bar-button-wp-default {
+  color: #fff;
 }
 
 page-teclado ion-navbar.red div.toolbar-background {

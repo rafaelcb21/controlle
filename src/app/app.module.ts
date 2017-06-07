@@ -11,7 +11,7 @@ import { TecladoPage } from '../pages/teclado/teclado';
 import { NumberBrasil } from '../pages/teclado/teclado.pipe';
 import { LancamentoPage } from '../pages/lancamento/lancamento';
 import { CategoriaModalPage } from '../pages/categoria-modal/categoria-modal';
-import { ContaModalPage } from '../pages/conta-modal/conta-modal';
+import { RepetirModalPage } from '../pages/repetir-modal/repetir-modal';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,7 @@ import { ContaModalPage } from '../pages/conta-modal/conta-modal';
     NumberBrasil,
     LancamentoPage,
     CategoriaModalPage,
-    ContaModalPage,
+    RepetirModalPage,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +34,7 @@ import { ContaModalPage } from '../pages/conta-modal/conta-modal';
     TecladoPage,
     LancamentoPage,
     CategoriaModalPage,
-    ContaModalPage,
+    RepetirModalPage,
   ],
   providers: [
     StatusBar,

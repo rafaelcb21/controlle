@@ -48,6 +48,15 @@ page-lancamento {
         height: 54px;
     }
 
+    .repetir{
+        justify-content: flex-end;
+        align-content: center;
+        align-items: center;
+        padding-top: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
     .cor-vermelha {
         color: $vermelho;
     }
