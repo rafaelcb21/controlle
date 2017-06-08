@@ -16,6 +16,8 @@ export class LancamentoPage implements OnInit{
   public data: string;
   public categoria: string;
   public cartao: string;
+  public cartaoOrigem: string;
+  public cartaoDestino: string;
   public mesFatura: string;
   public selectFatura: boolean = false;
   public observacao: boolean = false;
@@ -83,6 +85,8 @@ export class LancamentoPage implements OnInit{
   fatura(event){
     if(event.slice(0,6) == "cartao") {
       this.selectFatura = true;
+    }else{
+      this.selectFatura = false;
     }
   }
 

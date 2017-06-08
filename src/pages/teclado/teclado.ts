@@ -33,7 +33,7 @@ export class TecladoPage implements OnInit{
     if(this.tipo == "receita") {
       this.cabecalho = "Receita";
     }
-    if(this.tipo == "transferencia") {
+    if(this.tipo == "transferência") {
       this.cabecalho = "Transferência";
     }
   }

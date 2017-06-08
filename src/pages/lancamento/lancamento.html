@@ -61,7 +61,7 @@
             </ion-select>
         </ion-item>
 
-        <ion-item>
+        <ion-item *ngIf="tipo!='transferência'">
             <ion-label floating class='cor-label'>Conta/Cartão</ion-label>
             <ion-select [(ngModel)]="cartao" (ngModelChange)="fatura($event)">
                 <ion-option value="alimentacao">Caixa</ion-option>
@@ -80,6 +80,24 @@
                 <ion-option value="fatura-7">Julho de 2017</ion-option>
                 <ion-option value="fatura-8">Agosto de 2017</ion-option>
                 <ion-option value="fatura-9">Setembro de 2017</ion-option>
+            </ion-select>
+        </ion-item>
+        <ion-item *ngIf="tipo=='transferência'">
+            <ion-label floating class='cor-label'>Conta Origem</ion-label>
+            <ion-select [(ngModel)]="cartaoOrigem">
+                <ion-option value="alimentacao">Caixa</ion-option>
+                <ion-option value="cartao-1">Platinum Caixa Visa</ion-option>
+                <ion-option value="cartao-2">Santander FIT Mastercard</ion-option>
+                <ion-option value="cartao-3">Santander FREE Visa</ion-option>
+            </ion-select>
+        </ion-item>
+        <ion-item *ngIf="tipo=='transferência'">
+            <ion-label floating class='cor-label'>Conta Destino</ion-label>
+            <ion-select [(ngModel)]="cartaoDestino">
+                <ion-option value="alimentacao">Caixa</ion-option>
+                <ion-option value="cartao-1">Platinum Caixa Visa</ion-option>
+                <ion-option value="cartao-2">Santander FIT Mastercard</ion-option>
+                <ion-option value="cartao-3">Santander FREE Visa</ion-option>
             </ion-select>
         </ion-item>
         <ion-item>

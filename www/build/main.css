@@ -32305,6 +32305,27 @@ ion-navbar.toolbar {
   }
 }
 
+.menu_toogle {
+  color: #fff;
+}
+
+.toolbar-background {
+  border-color: #2196F3;
+  background: #2196F3;
+}
+
+.toolbar-title-md {
+  color: #fff;
+}
+
+.icon-left {
+  padding-left: 20px;
+}
+
+.color-item {
+  color: #757575;
+}
+
 page-categoria-modal ion-navbar.red div.toolbar-background {
   border-color: #F44336;
   background: #F44336;
@@ -32381,6 +32402,10 @@ page-home .style_alerta_semana_numero {
 
 page-home .btn_resolver {
   margin-top: 10px;
+}
+
+page-home .btn_resolver_color {
+  color: #757575;
 }
 
 page-home .list-wp > .item-block:last-child, page-home .list-wp > .item-wrapper:last-child .item-block {

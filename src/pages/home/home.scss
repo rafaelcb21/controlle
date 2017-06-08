@@ -48,7 +48,11 @@ page-home {
     }
 
     .btn_resolver{
-        margin-top: 10px;
+        margin-top: 10px;  
+    }
+
+    .btn_resolver_color{
+        color: $cinzaEscuro; 
     }
 
     .list-wp > .item-block:last-child, .list-wp > .item-wrapper:last-child .item-block {

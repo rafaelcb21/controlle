@@ -1,22 +1,30 @@
 <ion-menu [content]="content">
   <ion-header>
     <ion-toolbar>
-      <ion-title>Menu</ion-title>
+      <ion-title></ion-title>
     </ion-toolbar>
   </ion-header>
   <ion-content>
     <ion-list>
       <button ion-item (click)="openPage(homePage)">
-        Home
+        <ion-icon class='color-item' ios="ios-eye" md="md-eye"></ion-icon>
+        <span class='icon-left color-item'>Visão geral</span>
       </button>
       <button ion-item (click)="openPage(friendsPage)">
-        Friends
+        <ion-icon class='color-item' ios="ios-settings" md="md-settings"></ion-icon>
+        <span class='icon-left color-item'>Configurações</span>        
       </button>
       <button ion-item (click)="openPage(eventsPage)">
-        Events
+        <ion-icon class='color-item' ios="ios-swap" md="md-swap"></ion-icon>
+        <span class='icon-left color-item'>Lançamentos</span>        
+      </button>
+      <button ion-item (click)="openPage(eventsPage)">
+        <ion-icon class='color-item' ios="ios-stats" md="md-stats"></ion-icon>
+        <span class='icon-left color-item'>Gráficos</span>        
       </button>
       <button ion-item (click)="closeMenu()">
-        Close Menu
+        <ion-icon class='color-item' ios="ios-pie" md="md-pie"></ion-icon>
+        <span class='icon-left color-item'>Top despesas</span>
       </button>
     </ion-list>
   </ion-content>
