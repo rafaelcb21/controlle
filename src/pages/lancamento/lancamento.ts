@@ -3,6 +3,7 @@ import { NavController, NavParams, ViewController, ModalController } from 'ionic
 import { CategoriaModalPage } from '../categoria-modal/categoria-modal';
 import { RepetirModalPage } from '../repetir-modal/repetir-modal';
 import { HomePage } from '../home/home';
+import { TecladoPage } from '../teclado/teclado';
 
 @Component({
   selector: 'page-lancamento',
@@ -21,13 +22,15 @@ export class LancamentoPage implements OnInit{
   public repetir: string = '';
   public periodo: string = '';
   public quantidade: string = '';
-
+  public texto: string;
+  public apagar: boolean;
 
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
     private view: ViewController,
-    public modalCtrl: ModalController
+    public modalCtrl: ModalController,
+    public viewCtrl: ViewController,
   ){}
 
   ngOnInit(){
@@ -38,12 +41,25 @@ export class LancamentoPage implements OnInit{
       this.periodo = this.navParams.get('periodo');
       this.quantidade = this.navParams.get('quantidade');
 
-      console.log(this.valor)
-      console.log(this.tipo)
-      console.log(this.repetir)
-      console.log(this.periodo)
-      console.log(this.quantidade)
+      if(this.tipo == 'transferencia') this.tipo = 'transferência';
+      
+      if(this.repetir == undefined || this.repetir == ''){
+        this.texto = 'Repetir';
+        this.apagar = true;
+      }
 
+      if(this.repetir == 'parcelada'){
+        this.texto = this.repetir+' em '+this.quantidade+' '+this.periodo;
+      }
+
+      if(this.repetir == 'fixa'){
+        this.texto = this.tipo+' '+this.repetir+' '+this.periodo;
+      }
+  }
+
+  limpar(){
+    this.apagar = true;
+    this.texto = 'Repetir'
   }
 
   abrirModalCategoria(tipo) {
@@ -53,7 +69,15 @@ export class LancamentoPage implements OnInit{
 
   abrirModalRepetir(tipo) {
     let modal = this.modalCtrl.create(RepetirModalPage, {tipo: tipo, valor: this.valor});
+    modal.onDidDismiss(data => {
+     this.texto = 'Repetir';
+     this.apagar = true;
+   })
     modal.present();
+  }
+
+  tecladoPage(tipo){
+    this.navCtrl.push(TecladoPage, {tipo: tipo, valor: this.valor})
   }
 
   fatura(event){

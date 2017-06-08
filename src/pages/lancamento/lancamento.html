@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar hideBackButton="true"
-    [ngClass]="{'despesa':'red','receita':'green','transferencia':'gray'}[tipo]"
+    [ngClass]="{'despesa':'red','receita':'green','transferência':'gray'}[tipo]"
   >
     <ion-buttons start>
       <button ion-button (click)="sair()">
@@ -11,18 +11,24 @@
   </ion-navbar>
 </ion-header>
 <ion-content class="grid-basic-page">
-    <div class='teclado estrutura_input'>
+    <div class='teclado estrutura_input' (click)='tecladoPage(tipo)'>
         <div class='cifrao'
-            [ngClass]="{'despesa':'cor-vermelha','receita':'cor-verde','transferencia':'cor-cinza'}[tipo]"
+            [ngClass]="{'despesa':'cor-vermelha','receita':'cor-verde','transferência':'cor-cinza'}[tipo]"
         >R$</div>
         <span class='tamanho'
-            [ngClass]="{'despesa':'cor-vermelha','receita':'cor-verde','transferencia':'cor-cinza'}[tipo]"
+            [ngClass]="{'despesa':'cor-vermelha','receita':'cor-verde','transferência':'cor-cinza'}[tipo]"
         >{{ valor | numerobrasil }}</span>
     </div>
-    <div>
-        <div class='teclado repetir' (click)='abrirModalRepetir(tipo)'
-            [ngClass]="{'despesa':'cor-vermelha','receita':'cor-verde','transferencia':'cor-cinza'}[tipo]"
-        >Repetir</div>
+    <div class='teclado repetir'>
+        <span (click)='abrirModalRepetir(tipo)' *ngIf='apagar'
+            [ngClass]="{'despesa':'cor-vermelha','receita':'cor-verde','transferência':'cor-cinza'}[tipo]"
+        >{{ texto }}</span>
+        <span (click)='abrirModalRepetir(tipo)' *ngIf='!apagar'
+            [ngClass]="{'despesa':'cor-vermelha','receita':'cor-verde','transferência':'cor-cinza'}[tipo]"
+        >{{ texto }}</span>
+        <span class='space' *ngIf='!apagar' (click)='limpar()'>
+            <ion-icon color='gray' ios="ios-close-circle" md="md-close-circle"></ion-icon>
+        </span>
     </div>
     <ion-list>
         <ion-item>
@@ -84,11 +90,13 @@
             <ion-label floating class='cor-label'>Observação</ion-label>
             <ion-input type="text"></ion-input>
         </ion-item>
-        
     </ion-list>
+
+    <div style="height: 80px"></div>
+
     <ion-fab center bottom>
         <button ion-fab
-            [color]= "{'despesa':'danger','receita':'secondary','transferencia':'gray'}[tipo]"
+            [color]= "{'despesa':'danger','receita':'secondary','transferência':'gray'}[tipo]"
         ><ion-icon ios="ios-checkmark" md="md-checkmark"></ion-icon></button>
     </ion-fab>
 </ion-content>

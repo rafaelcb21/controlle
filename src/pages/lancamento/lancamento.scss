@@ -43,7 +43,7 @@ page-lancamento {
         align-items: center;
         padding-top: 30px;
         padding-left: 40px;
-        padding-right: 40px;
+        padding-right: 10px;
         padding-bottom: 30px;
         height: 54px;
     }
@@ -52,11 +52,13 @@ page-lancamento {
         justify-content: flex-end;
         align-content: center;
         align-items: center;
-        padding-top: 10px;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-right: 10px;
+        padding-bottom: 10px;
     }
 
+    .space {
+        padding-left: 10px;
+    }
     .cor-vermelha {
         color: $vermelho;
     }

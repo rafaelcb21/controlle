@@ -28,11 +28,11 @@ export class RepetirModalPage {
   }
 
   registarLancamento(repetir, periodo, quantidade){
-    if(repetir == "parcelado" && periodo == ''){
+    if(repetir == "parcelada" && periodo == ''){
       this.showAlert('Escolha um periodo')
-    }else if(repetir == "parcelado" && quantidade == ''){
+    }else if(repetir == "parcelada" && quantidade == ''){
       this.showAlert('Escolha um numero para o periodo desejado')
-    }else if(repetir == "fixo" && periodo == ''){
+    }else if(repetir == "fixa" && periodo == ''){
       this.showAlert('Escolha um periodo')
     }else{
       let resultado = {repetir: repetir, periodo: periodo, quantidade: quantidade, tipo: this.tipo, valor: this.valor}

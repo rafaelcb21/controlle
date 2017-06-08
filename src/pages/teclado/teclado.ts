@@ -12,20 +12,29 @@ export class TecladoPage implements OnInit{
   public numeros: string[] = [];
   public valor: string = '';
   public cabecalho: string;
+  public valorNumber: string;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.tipo = navParams.get('tipo');
-  }
+  constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ngOnInit(){
+    this.tipo = this.navParams.get('tipo');
+    this.valorNumber= this.navParams.get('valor');
+
+    if(this.valorNumber != undefined) {     
+      for(let i = 0; i < this.valorNumber.length; i++){
+        this.numeros.push(this.valorNumber.charAt(i))
+      }
+      this.valor = this.numeros.join('');
+
+    }
     if(this.tipo == "despesa") {
-      this.cabecalho = "Despesa"
+      this.cabecalho = "Despesa";
     }
     if(this.tipo == "receita") {
-      this.cabecalho = "Receita"
+      this.cabecalho = "Receita";
     }
     if(this.tipo == "transferencia") {
-      this.cabecalho = "Transferência"
+      this.cabecalho = "Transferência";
     }
   }
 

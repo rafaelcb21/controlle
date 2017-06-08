@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar
-    [ngClass]="{'despesa':'red','receita':'green','transferencia':'gray'}[tipo]"
+    [ngClass]="{'despesa':'red','receita':'green','transferência':'gray'}[tipo]"
   >
   <ion-buttons start>
       <button ion-button (click)="sair()">
@@ -16,22 +16,22 @@
   <ion-list radio-group [(ngModel)]="repetir">
     <ion-item>
       <ion-label>Fixo</ion-label>
-      <ion-radio value="fixo"></ion-radio>
+      <ion-radio value="fixa"></ion-radio>
     </ion-item>
     <ion-item>
       <ion-label>Parcelado</ion-label>
-      <ion-radio value="parcelado"></ion-radio>
+      <ion-radio value="parcelada"></ion-radio>
     </ion-item>
   </ion-list>
 
 
-    <ion-list radio-group  *ngIf="repetir=='fixo'" [(ngModel)]="periodo">
+    <ion-list radio-group  *ngIf="repetir=='fixa'" [(ngModel)]="periodo">
       <ion-list-header>
           Período
       </ion-list-header>
       <ion-item>
         <ion-label>Diário</ion-label>
-        <ion-radio value="diario"></ion-radio>
+        <ion-radio value="diaria"></ion-radio>
       </ion-item>
       <ion-item>
         <ion-label>Semanal</ion-label>
@@ -64,12 +64,12 @@
     </ion-list>
 
 
-    <ion-item  *ngIf="repetir=='parcelado'">
+    <ion-item  *ngIf="repetir=='parcelada'">
       <ion-label floating>Quantidade</ion-label>
-      <ion-input type="number" [(ngModel)]='quantidade'></ion-input>
+      <ion-input type="number" [min]='2' [(ngModel)]='quantidade'></ion-input>
     </ion-item>
 
-    <ion-list radio-group  *ngIf="repetir=='parcelado'" [(ngModel)]="periodo">
+    <ion-list radio-group  *ngIf="repetir=='parcelada'" [(ngModel)]="periodo">
       <ion-list-header>
           Período
       </ion-list-header>
@@ -111,7 +111,7 @@
 
     <ion-fab center bottom>
         <button ion-fab (click)='registarLancamento(repetir, periodo, quantidade)'
-            [color]= "{'despesa':'danger','receita':'secondary','transferencia':'gray'}[tipo]"
+            [color]= "{'despesa':'danger','receita':'secondary','transferência':'gray'}[tipo]"
         ><ion-icon ios="ios-checkmark" md="md-checkmark"></ion-icon></button>
     </ion-fab>
 
